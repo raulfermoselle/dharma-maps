@@ -1,0 +1,7 @@
+# Shell scripts must keep LF endings. Checked out with CRLF on a machine configured
+# that way, the shebang line ends in \r and the script dies with a "bad interpreter"
+# error that names an interpreter that plainly exists — a confusing failure to inherit.
+*.sh text eol=lf
+
+# PowerShell is happiest with CRLF on Windows.
+*.ps1 text eol=crlf

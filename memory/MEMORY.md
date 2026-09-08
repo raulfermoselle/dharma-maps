@@ -1,0 +1,11 @@
+- [Memory lives in this repo](memory-lives-in-this-repo.md) — auto-memory is a link into `memory/`, made by a linker that computes the machine path; only what is pushed is durable.
+- [The copyright posture is fixed](copyright-posture-is-fixed.md) — why no source material, why `noindex` everywhere, why the takedown offer must be real, why there is deliberately no LICENSE.
+- [What ships without asking](what-ships-without-asking.md) — fixes to existing pages ship; a new map, the copyright posture and credentials wait; a published slug is a promise.
+- [Write plainly for the reader](write-plainly-for-the-reader.md) — cut your jargon, keep the tradition's exact; "entity-relationship model", "structural maps" and "bands" are on record as rejected.
+- [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.
+- [Theme colours in three blocks](theme-colours-in-three-blocks.md) — full light palette on bare `:root`, then a guarded `prefers-color-scheme` block, then `[data-theme="dark"]`; reuse the house palette.
+- [Phone first, and measure the render](phone-first-and-measure-the-render.md) — 390px target, length is the real constraint; the preview loop, the tools that lie about it, the one query that settles overflow.
+- [Verify on the live host](verify-on-the-live-host.md) — poll the Pages build, then fetch the live URL and grep; a success message and a `built` status are not the bytes a reader gets.
+- [Commits record why](commits-record-why.md) — the reason a wording was rejected is what stops it returning; write messages with `-F` or repeated `-m`, never a heredoc.
+- [Git identity is not the default](git-identity-is-not-the-default.md) — this repo pins its identity and credential helper locally; check what a push would use, never rewrite shared auth config.
+- [The first map's length is the open problem](mind-map-length-is-the-open-problem.md) — the jump-nav was deferred not rejected; a 380px breakpoint makes 360 and 390 phones disagree.

@@ -39,3 +39,7 @@ desktop.ini
 *~
 .vscode/
 .idea/
+
+# Claude Code writes machine-local permissions and paths here. The repo is public;
+# committed memory is deliberate, a machine's local settings never are.
+.claude/settings.local.json
