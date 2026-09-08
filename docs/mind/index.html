@@ -419,6 +419,17 @@
   button.t.has-ex::after { content: "✦"; font-size: 0.72em; color: var(--saffron); margin-left: 2px; vertical-align: super; line-height: 0; }
   button.t--plain { border-bottom: none; }
   .label button.t { color: inherit; }
+  /* A chip that opens a note: keep the pill, dash its lower edge so it reads as tappable.
+     button.t zeroes padding, which would otherwise squash the label against the pill. */
+  button.chip.t {
+    border: 1px solid color-mix(in srgb, var(--accent, var(--lapis)) 34%, transparent);
+    border-bottom-style: dashed; border-radius: 999px;
+    padding: 4px 11px; line-height: 1.35;
+  }
+  button.chip.t.has-ex { padding-right: 9px; }
+  /* Notes that are ours, not the author's — plain, so italic serif stays reserved for quotation. */
+  .tip__def .plain { font-family: var(--sans); font-style: normal; font-size: 12.5px; line-height: 1.5; display: block; }
+  .tip__def .plain + .plain { margin-top: 7px; }
 
   #tip {
     position: fixed; margin: 0; inset: auto;
@@ -524,28 +535,24 @@
           </div>
           <div class="card">
             <p class="label">Synonyms, and the line that divides them</p>
-            <p class="tiny" style="margin:0 0 9px">Six words circle this territory. Three name one thing; three are wider. Treating all six as interchangeable is the easy mistake.</p>
+            <p class="tiny" style="margin:0 0 9px">Six words circle this territory. <button class="t" data-term="Three name one thing">Three name one thing</button>; three are wider. Treating all six as interchangeable is the easy mistake.</p>
 
             <div class="chiplist" style="margin-top:0">
-              <span class="chip"><b>primary mind</b></span>
-              <span class="chip"><b>consciousness</b></span>
-              <span class="chip"><b>mentality</b></span>
+              <button class="chip t" data-term="Primary mind"><b>primary mind</b></button>
+              <button class="chip t" data-term="Consciousness"><b>consciousness</b></button>
+              <button class="chip t" data-term="Mentality"><b>mentality</b></button>
             </div>
-            <p class="def def--sm" style="margin:9px 0 5px">“Primary mind, consciousness and mentality are synonymous terms.”</p>
-            <p class="tiny">The book states this three times — in Part&nbsp;One, in Part&nbsp;Two with a separate Tibetan word set beside each (<i>rnam shes</i> for consciousness, <i>yid</i> for mentality), and again in Appendix&nbsp;1: three words, one referent. The Kadampa Glossary says it in the same breath.</p>
-            <p class="tiny" style="margin-top:6px"><b>Consciousness</b> is the word used when they are counted off — eye, ear, nose, tongue, body, mental. <b>Mentality</b> is far rarer, and surfaces where a primary mind is doing duty as the <i>basis</i> for the next moment of knowing: “it is a mentality because it is a primary mind.”</p>
+            <p class="def def--sm" style="margin:9px 0 0">“Primary mind, consciousness and mentality are synonymous terms.”</p>
 
             <div class="chiplist" style="margin-top:13px">
-              <span class="chip"><b>mind</b></span>
-              <span class="chip"><b>awareness</b></span>
-              <span class="chip"><b>cognizer</b></span>
+              <button class="chip t" data-term="Mind"><b>mind</b></button>
+              <button class="chip t" data-term="Awareness"><b>awareness</b></button>
+              <button class="chip t" data-term="Cognizer"><b>cognizer</b></button>
             </div>
-            <p class="tiny" style="margin-top:8px">Wider, and <b>not</b> interchangeable with the three above — each of these takes in the mental factors too. <b>Mind</b> names the nature: clarity and knowing. <b>Awareness</b> sorts that same field by what it depends on, giving sense awareness and mental awareness. <b>Cognizer</b> is the word the definitions themselves use, which is why every definition on this page opens with it.</p>
+            <p class="def def--sm" style="margin:9px 0 5px">“The sense consciousnesses are primary minds. Their retinue of secondary minds, or mental factors, are sense awarenesses, but not consciousnesses.”</p>
+            <p class="tiny">So a mental factor is a mind, an awareness and a cognizer, and never a consciousness — which is why this is two lists and not one.</p>
 
-            <p class="def def--sm" style="margin:11px 0 5px">“The sense consciousnesses are primary minds. Their retinue of secondary minds, or mental factors, are sense awarenesses, but not consciousnesses.”</p>
-            <p class="tiny">So a mental factor is a mind, an awareness and a cognizer, and never a consciousness. That sentence is what holds the two groups apart — and why this is two lists rather than one.</p>
-
-            <p class="tiny" style="margin-top:9px">Quoted from <i>Cómo comprender la mente</i> (Editorial Tharpa, 2014) — Part&nbsp;One, Part&nbsp;Two and Appendix&nbsp;1 — rendered into the glossary's English.</p>
+            <p class="tiny" style="margin-top:9px">Tap any of the six. Quoted from <i>Cómo comprender la mente</i> (Editorial Tharpa, 2014), rendered into the glossary's English.</p>
           </div>
         </div>
       </div>
@@ -950,6 +957,11 @@
     "Primary mind": {kind:"Definition", def:"The cognizer that principally apprehends the mere entity of an object.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its particular attributes; the primary mind apprehends mainly the mere entity. Since an object has many characteristics but only one entity, many mental factors observe it while only one primary mind does."},
     "Mental factor": {kind:"Definition", def:"The cognizer that principally apprehends a particular attribute of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body. The Tibetan term, sem yhung, says it exactly: that which has arisen from the mind."},
     "Six consciousnesses": {kind:"Primary minds", def:"The six primary minds: eye, ear, nose, tongue, body and mental consciousness."},
+    "Three name one thing": {kind:"Why these three are synonyms", def:"<span class='plain'>The book says it three times: in Part&nbsp;One, in Part&nbsp;Two, and again in Appendix&nbsp;1. The Part&nbsp;Two passage sets a separate Tibetan word beside each — <i>rnam shes</i> for consciousness, <i>yid</i> for mentality — which is the strongest form the claim can take: three distinct words in the source language, one referent. The Kadampa Glossary states it in the same words.</span>"},
+    "Consciousness": {kind:"Synonym of primary mind", def:"<span class='plain'>The enumerating word. When the six primary minds are counted off they are counted as consciousnesses — eye, ear, nose, tongue, body, mental. Strictly a primary mind, and never a mental factor.</span>"},
+    "Mentality": {kind:"Synonym of primary mind", def:"<span class='plain'>The rarest of the three, and the most functional in tone. It surfaces where a primary mind is doing duty as the <i>basis</i> that produces the next moment of knowing — which is why the book can say “it is a mentality because it is a primary mind.” Tibetan <i>yid</i>.</span>"},
+    "Awareness": {kind:"Wider than consciousness", def:"<span class='plain'>The same field sorted by what each mind depends on, which gives sense awareness and mental awareness. Wider than consciousness — and this is exactly where the two groups part: a mental factor accompanying an eye consciousness <b>is</b> an eye awareness, but is <b>not</b> itself a consciousness.</span>"},
+    "Cognizer": {kind:"The word the definitions use", def:"<span class='plain'>The definitional genus. Primary minds and mental factors are both cognizers, which is why every definition on this page opens with the word. The most technical of the six in tone, and almost never used outside a definition.</span>"},
     "Flame and its rays": {kind:"Analogy", def:"The image for how a primary mind relates to its mental factors.", ex:"The primary mind is like a candle flame and its factors like the flame's rays: the rays spring from the flame and exist at the same time as it, and just as the flame illuminates with its rays, the primary mind knows its object with the help of its factors. Flame and rays are one thing, never found apart."},
     "Five similarities": {kind:"Primary mind &amp; factors", def:"A primary mind and its factors always share five things: basis, object, aspect, time and substance.", ex:"When the tongue consciousness tastes tea, the primary mind and its feeling share the same base, the same object, the same time and the same substance. This is why one primary mind can have only one feeling: we speak of having mixed feelings about something, but two manifest minds at once are impossible for an ordinary being."},
 
