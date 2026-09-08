@@ -435,12 +435,29 @@
   /* Names the point of view a question is taken from. Muted, not saffron — saffron is
      reserved for the Geshe-la's-example label. */
   /* The element a note belongs to, lit while that note is open. */
+  @keyframes termGlow {
+    0%, 100% {
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent, var(--lapis)) 60%, transparent),
+                  0 0 9px 1px color-mix(in srgb, var(--accent, var(--lapis)) 40%, transparent);
+    }
+    50% {
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--lapis)) 95%, transparent),
+                  0 0 22px 7px color-mix(in srgb, var(--accent, var(--lapis)) 70%, transparent);
+    }
+  }
   button.t.is-open {
     background: var(--accent, var(--lapis));
     color: var(--ground);
     border-bottom-color: transparent;
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--lapis)) 38%, transparent);
     border-radius: 4px;
+    animation: termGlow 1.9s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    button.t.is-open {
+      animation: none;
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--lapis)) 85%, transparent),
+                  0 0 18px 5px color-mix(in srgb, var(--accent, var(--lapis)) 55%, transparent);
+    }
   }
   button.t.is-open b, button.t.is-open i { color: var(--ground); }
   button.t.is-open::after { color: var(--ground) !important; }
@@ -470,10 +487,10 @@
     z-index: 50;
   }
   /* Light touch: the lit element sits behind this, and has to stay readable. */
-  #tip::backdrop { background: rgba(10,12,18,0.14); }
-  @media (prefers-color-scheme: dark) { #tip::backdrop { background: rgba(0,0,0,0.22); } }
-  :root[data-theme="dark"] #tip::backdrop { background: rgba(0,0,0,0.22); }
-  :root[data-theme="light"] #tip::backdrop { background: rgba(10,12,18,0.14); }
+  #tip::backdrop { background: rgba(10,12,18,0.10); }
+  @media (prefers-color-scheme: dark) { #tip::backdrop { background: rgba(0,0,0,0.16); } }
+  :root[data-theme="dark"] #tip::backdrop { background: rgba(0,0,0,0.16); }
+  :root[data-theme="light"] #tip::backdrop { background: rgba(10,12,18,0.10); }
   .tip__term { font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--tip-accent, var(--lapis)); margin: 0 0 3px; line-height: 1.15; }
   .tip__kind { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin: 0 0 8px; }
   .tip__def { font-family: var(--serif); font-style: italic; font-size: 13.5px; line-height: 1.45; color: var(--ink); margin: 0; }
