@@ -6,6 +6,7 @@
 - [Terms follow the official glossary](terms-follow-the-official-glossary.md) — the source is Spanish, so back-translation is the default failure; the glossary is blocked here, WebSearch is the route.
 - [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.
 - [Theme colours in three blocks](theme-colours-in-three-blocks.md) — full light palette on bare `:root`, then a guarded `prefers-color-scheme` block, then `[data-theme="dark"]`; reuse the house palette.
+- [Term popover gotchas](term-popover-gotchas.md) — `button.t` zeroes padding and border, so layered states must restore both — and with box-shadow, not padding, or the line reflows.
 - [Phone first, and measure the render](phone-first-and-measure-the-render.md) — 390px target; the preview sequence that works, two viewport tools that lie, the query that settles overflow.
 - [Screenshots are the only preview channel](screenshots-are-the-only-preview-channel.md) — the preview browser is one he cannot see; send rendered screenshots as work happens, not batched.
 - [Verify on the live host](verify-on-the-live-host.md) — poll the Pages build, then fetch the live URL and grep; a success message and a `built` status are not the bytes a reader gets.
