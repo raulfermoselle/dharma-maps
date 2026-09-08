@@ -424,7 +424,9 @@
   button.chip.t {
     border: 1px solid color-mix(in srgb, var(--accent, var(--lapis)) 34%, transparent);
     border-bottom-style: dashed; border-radius: 999px;
-    padding: 4px 11px; line-height: 1.35;
+    /* 3/5 rather than 4/4: the font reserves more descender space than the
+       labels use, which parks the text a measured ~1.8px low in the pill. */
+    padding: 3px 11px 5px; line-height: 1.35;
   }
   button.chip.t.has-ex { padding-right: 9px; }
   /* Notes that are ours, not the author's — plain, so italic serif stays reserved for quotation. */
