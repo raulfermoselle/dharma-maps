@@ -22,6 +22,30 @@ because a rejected wording that leaves no trace comes straight back:
 The test that catches all three: **if a phrase would land well in a design review and
 badly read aloud to a friend who does not write software, it is the wrong phrase.**
 
+## Your jargon creeps in when you explain structure, not content
+
+Two more went in and had to come out of a single card, both caught by the maintainer
+rather than by me:
+
+- **"the same field sorted by what each mind depends on"** — *field* is nobody's term. It
+  sounds like an explanation and carries no information.
+- **"different cuts of the same set"** — *cut* was used six times across one card and
+  defined nowhere on the page. The maintainer's question was exact: *I only understood
+  what a cut is from your prose; is it explained anywhere on the page?* It was not.
+
+**The pattern is that this happens while describing how the material is organised, not
+while describing the material.** Terms are checked against the glossary
+([[terms-follow-the-official-glossary]]); metaphors for structure get invented on the
+spot and never checked against anything.
+
+**The test:** a structural word that is neither the book's nor defined on the page is
+yours, and has to go.
+
+**The book usually supplies something better.** Here it did: it classifies minds four
+times over, each time announcing *desde el punto de vista de…* — from what point of
+view. Rendering each as **the question it answers** ("What does it depend on?") replaced
+the invented metaphor with the author's own device, and was clearer than either.
+
 ## Plain is not vague
 
 The tradition's own technical vocabulary — *primary mind*, *mental factor*,
