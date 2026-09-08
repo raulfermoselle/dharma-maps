@@ -436,11 +436,17 @@
      reserved for the Geshe-la's-example label. */
   /* The element a note belongs to, lit while that note is open. */
   button.t.is-open {
-    background: color-mix(in srgb, var(--accent, var(--lapis)) 20%, transparent);
-    color: var(--accent, var(--lapis));
-    box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent, var(--lapis)) 42%, transparent);
+    background: var(--accent, var(--lapis));
+    color: var(--ground);
+    border-bottom-color: transparent;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, var(--lapis)) 38%, transparent);
+    border-radius: 4px;
   }
-  button.chip.t.is-open { border-color: var(--accent, var(--lapis)); border-bottom-style: solid; }
+  button.t.is-open b, button.t.is-open i { color: var(--ground); }
+  button.t.is-open::after { color: var(--ground) !important; }
+  button.chip.t.is-open {
+    border-color: var(--accent, var(--lapis)); border-bottom-style: solid; border-radius: 999px;
+  }
   /* Terms named inside a note, tappable to walk from one note to the next. */
   .tip__def button.t, .tip__ex button.t {
     color: var(--tip-accent, var(--lapis));
@@ -463,10 +469,11 @@
     font-family: var(--sans);
     z-index: 50;
   }
-  #tip::backdrop { background: rgba(10,12,18,0.28); }
-  @media (prefers-color-scheme: dark) { #tip::backdrop { background: rgba(0,0,0,0.5); } }
-  :root[data-theme="dark"] #tip::backdrop { background: rgba(0,0,0,0.5); }
-  :root[data-theme="light"] #tip::backdrop { background: rgba(10,12,18,0.28); }
+  /* Light touch: the lit element sits behind this, and has to stay readable. */
+  #tip::backdrop { background: rgba(10,12,18,0.14); }
+  @media (prefers-color-scheme: dark) { #tip::backdrop { background: rgba(0,0,0,0.22); } }
+  :root[data-theme="dark"] #tip::backdrop { background: rgba(0,0,0,0.22); }
+  :root[data-theme="light"] #tip::backdrop { background: rgba(10,12,18,0.14); }
   .tip__term { font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--tip-accent, var(--lapis)); margin: 0 0 3px; line-height: 1.15; }
   .tip__kind { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin: 0 0 8px; }
   .tip__def { font-family: var(--serif); font-style: italic; font-size: 13.5px; line-height: 1.45; color: var(--ink); margin: 0; }
@@ -1153,6 +1160,26 @@
     }
     position(at);
     markOpen(key);
+    const shown = reveal();
+    if(shown){ anchor = shown; position(shown); }
+  }
+
+  /* Bring the lit element on screen, so the highlight is something you can actually see.
+     Picks whichever occurrence is nearest the current view, and leaves it alone if it is
+     already comfortably above where the note will sit. */
+  function reveal(){
+    const lit = Array.prototype.slice.call(document.querySelectorAll('button.t.is-open'));
+    if(!lit.length) return null;
+    const mid = window.innerHeight / 2;
+    lit.sort(function(a, b){
+      return Math.abs(a.getBoundingClientRect().top - mid) - Math.abs(b.getBoundingClientRect().top - mid);
+    });
+    const t = lit[0];
+    const r = t.getBoundingClientRect();
+    if(r.top < 8 || r.bottom > window.innerHeight * 0.5){
+      t.scrollIntoView({block:'center'});
+    }
+    return t;
   }
 
   /* Delegated, because the terms inside a note are created when the note is rendered. */
