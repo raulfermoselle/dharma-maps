@@ -434,6 +434,18 @@
   .tip__def .plain + .plain { margin-top: 7px; }
   /* Names the point of view a question is taken from. Muted, not saffron — saffron is
      reserved for the Geshe-la's-example label. */
+  /* The element a note belongs to, lit while that note is open. */
+  button.t.is-open {
+    background: color-mix(in srgb, var(--accent, var(--lapis)) 20%, transparent);
+    color: var(--accent, var(--lapis));
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent, var(--lapis)) 42%, transparent);
+  }
+  button.chip.t.is-open { border-color: var(--accent, var(--lapis)); border-bottom-style: solid; }
+  /* Terms named inside a note, tappable to walk from one note to the next. */
+  .tip__def button.t, .tip__ex button.t {
+    color: var(--tip-accent, var(--lapis));
+    border-bottom-color: color-mix(in srgb, var(--tip-accent, var(--lapis)) 65%, transparent);
+  }
   .tip__def .qlabel {
     display: block; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase;
     font-weight: 700; color: var(--ink-3); margin-bottom: 1px;
@@ -968,12 +980,12 @@
     "Mental power": {kind:"Dominant condition of a mental awareness", def:"The mentality whose principal function is to produce directly the particular aspect of a mental awareness. Being a primary mind, it is itself a mentality — which is the one place the book reaches for that word."},
     "Yogic direct perceiver": {kind:"Direct perceiver, third kind", def:"The direct perceiver that realizes the true nature of phenomena directly, from its particular dominant condition: the concentration that is the union of tranquil abiding and superior seeing. Whoever holds this realization is called a yogi, or a Superior being."},
     "Six consciousnesses": {kind:"Primary minds", def:"The six primary minds: eye, ear, nose, tongue, body and mental consciousness."},
-    "Three name one thing": {kind:"Why these three are synonyms", def:"<span class='plain'>The book says it three times: in Part&nbsp;One, in Part&nbsp;Two, and again in Appendix&nbsp;1. The Part&nbsp;Two passage sets a separate Tibetan word beside each — <i>rnam shes</i> for consciousness, <i>yid</i> for mentality — which is the strongest form the claim can take: three distinct words in the source language, one referent. The Kadampa Glossary states it in the same words.</span>"},
-    "Consciousness": {kind:"Synonym of primary mind", def:"<span class='plain'>The enumerating word. When the six primary minds are counted off they are counted as consciousnesses — eye, ear, nose, tongue, body, mental. Strictly a primary mind, and never a mental factor.</span>"},
-    "Mentality": {kind:"Synonym of primary mind", def:"<span class='plain'>The rarest of the three. It appears where a primary mind is being described as the <i>basis</i> for the next moment of knowing, which is why the book can say “it is a mentality because it is a primary mind.” The mental power is the clearest case. Tibetan <i>yid</i>.</span>"},
+    "Three name one thing": {kind:"The evidence for it", def:"<span class='plain'>The book says it three times: in Part&nbsp;One, in Part&nbsp;Two, and again in Appendix&nbsp;1. The Part&nbsp;Two passage sets a separate Tibetan word beside each — <i>rnam shes</i> for consciousness, <i>yid</i> for mentality — which is the strongest form the claim can take: three distinct words in the source language, one referent. The Kadampa Glossary states it in the same words.</span>"},
+    "Consciousness": {kind:"Another name for a primary mind", def:"<span class='plain'>Consciousness is another name for a <button class='t' data-term='Primary mind'>primary mind</button>, and the word used when the six are counted off — eye, ear, nose, tongue, body, mental. It never covers a <button class='t' data-term='Mental factor'>mental factor</button>.</span>"},
+    "Mentality": {kind:"Synonym of primary mind", def:"<span class='plain'>Mentality is another name for a <button class='t' data-term='Primary mind'>primary mind</button>, and the rarest of the three. It turns up where a primary mind is being described as the <i>basis</i> for the next moment of knowing — which is why the book can say “it is a mentality because it is a primary mind.” The <button class='t' data-term='Mental power'>mental power</button> is the clearest case. Tibetan <i>yid</i>.</span>"},
     "Awareness": {kind:"The general term for any mind", def:"<span class='plain'>An awareness is a mind, named by what it depends on. The glossary is explicit: <i>all minds are included within the five sense awarenesses and mental awareness.</i> The five sense awarenesses are eye, ear, nose, tongue and body; mental awareness is either conceptual or non-conceptual. Nothing is left out — every mind is one of these.</span><span class='plain'>That makes it wider than <i>consciousness</i>, which covers only primary minds. So one mind can be an awareness without being a consciousness. Take a mental factor accompanying an eye consciousness: it depends on the same eye sense power, so it is an eye awareness; but it apprehends an attribute rather than the object itself, so it is a mental factor and <b>not</b> a consciousness. Nothing about the mind changed — only what we asked about it.</span>"},
     "Four questions about the same minds": {kind:"How the book classifies minds", def:"<span class='plain'>The book describes the same minds four times over, and each time it names the point of view it is taking. Four questions, and every mind has an answer to all four at once.</span><span class='plain'><span class='qlabel'>By level</span><b>How subtle is it?</b> Gross, subtle, or very subtle — the book's test being how easily the mind can be recognised.</span><span class='plain'><span class='qlabel'>By function</span><b>What does it apprehend?</b> The mere entity of its object (a primary mind), or one particular attribute of it (a mental factor).</span><span class='plain'><span class='qlabel'>By how it connects with its object</span><b>How does it reach its object?</b> Directly (non-conceptual), or through a generic image (conceptual).</span><span class='plain'><span class='qlabel'>By dominant condition</span><b>What does it depend on?</b> A sense power (a sense awareness), or the mental power (a mental awareness).</span><span class='plain'>The first two are the two cards just above this one.</span>"},
-    "Cognizer": {kind:"The word the definitions use", def:"<span class='plain'>The word the definitions are built from. Primary minds and mental factors are both cognizers, which is why almost every definition on this page begins with it. It has no glossary entry of its own — it lives inside about twenty others.</span>"},
+    "Cognizer": {kind:"The word the definitions use", def:"<span class='plain'>Cognizer is the word the definitions are built from: a <button class='t' data-term='Primary mind'>primary mind</button> and a <button class='t' data-term='Mental factor'>mental factor</button> are both cognizers, which is why almost every definition on this page begins with it.</span><span class='plain'>It is the one word here with no glossary entry of its own — it lives inside about twenty other definitions, never as a headword.</span>"},
     "Flame and its rays": {kind:"Analogy", def:"The image for how a primary mind relates to its mental factors.", ex:"The primary mind is like a candle flame and its factors like the flame's rays: the rays spring from the flame and exist at the same time as it, and just as the flame illuminates with its rays, the primary mind knows its object with the help of its factors. Flame and rays are one thing, never found apart."},
     "Five similarities": {kind:"Primary mind &amp; factors", def:"A primary mind and its factors always share five things: basis, object, aspect, time and substance.", ex:"When the tongue consciousness tastes tea, the primary mind and its feeling share the same base, the same object, the same time and the same substance. This is why one primary mind can have only one feeling: we speak of having mixed feelings about something, but two manifest minds at once are impossible for an ordinary being."},
 
@@ -1107,25 +1119,55 @@
     top = Math.max(m, Math.min(top, window.innerHeight - th - m));
     tip.style.left = left + 'px'; tip.style.top = top + 'px';
   }
+  /* Light every on-page button for the term now being shown, so the reader can see
+     which element the open note belongs to. Notes can be walked term to term, and the
+     highlight follows the term rather than the click. */
+  function markOpen(key){
+    document.querySelectorAll('button.t.is-open').forEach(function(b){ b.classList.remove('is-open'); });
+    if(!key) return;
+    document.querySelectorAll('button.t[data-term="' + key.replace(/"/g, '\\"') + '"]').forEach(function(b){
+      if(!tip.contains(b)) b.classList.add('is-open');
+    });
+  }
+
+  let anchor = null;   /* last on-page button clicked; in-note jumps keep this position */
+
   function openTip(btn){
     const key = btn.dataset.term;
     const d = TIPS[key] || {def:"No detail recorded for this term."};
+    const inNote = tip.contains(btn);
+    if(!inNote) anchor = btn;
+    const at = anchor || btn;
     elTerm.textContent = key;
     elKind.textContent = d.kind || '';
     elKind.style.display = d.kind ? '' : 'none';
     elDef.innerHTML = d.def || '';
     if(d.ex){ elEx.style.display=''; elEx.innerHTML = '<span class="tip__exlabel">Geshe-la’s example</span>' + d.ex; }
     else { elEx.style.display='none'; }
-    tip.style.setProperty('--tip-accent', accentFor(btn));
-    if(tip.matches(':popover-open')) tip.hidePopover();
-    tip.showPopover();
-    position(btn);
+    tip.style.setProperty('--tip-accent', accentFor(at));
+    if(inNote){
+      if(!tip.matches(':popover-open')) tip.showPopover();
+    } else {
+      if(tip.matches(':popover-open')) tip.hidePopover();
+      tip.showPopover();
+    }
+    position(at);
+    markOpen(key);
   }
+
+  /* Delegated, because the terms inside a note are created when the note is rendered. */
+  document.addEventListener('click', function(e){
+    const btn = e.target.closest && e.target.closest('button.t');
+    if(btn) openTip(btn);
+  });
+
+  tip.addEventListener('toggle', function(e){
+    if(e.newState === 'closed'){ markOpen(null); anchor = null; }
+  });
 
   document.querySelectorAll('button.t').forEach(function(btn){
     const d = TIPS[btn.dataset.term];
     if(d && d.ex){ btn.classList.add('has-ex'); }
-    btn.addEventListener('click', function(){ openTip(btn); });
   });
   window.addEventListener('resize', function(){ if(tip.matches(':popover-open')) tip.hidePopover(); });
 })();
