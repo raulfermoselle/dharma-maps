@@ -39,6 +39,23 @@ and FPMT material, whose vocabulary is different and internally consistent — *
 vs *discernment*, *ever-functioning* vs *all-accompanying*. Their agreement with each other is
 not evidence about Kadampa usage. Restrict to `kadampa.org` when it works.
 
+## The route that actually settles a term
+
+**The glossary is also a searchable app**, one term per query with the source book listed
+under *Further reading* — which is how you tell a right word in the wrong sense from a right
+word in the right one. The maintainer can open it on a device outside this network, so the
+reliable move for a stubborn term is to name it precisely and ask, rather than to keep
+guessing. That is how *Denial*, *Initial scope practitioner* and the rest were finally
+settled.
+
+**It carries a language selector.** A Spanish glossary would map the Spanish edition's
+vocabulary straight onto its official English and remove the guesswork from every future map.
+Worth asking for before starting one.
+
+**Do not copy the glossary into the repo.** Its own footer asserts copyright — New Kadampa
+Tradition, from the Collected Works — so it is source material like the book: consult it
+freely, keep it outside the repo, quote a definition only in brief.
+
 **An unauthorised full text of the English edition circulates on archive.org.** It would
 settle every term at once. **Do not use it.** This collection's whole standing rests on
 respecting the publisher ([[copyright-posture-is-fixed]]), and building it from a pirate scan
