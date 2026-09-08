@@ -52,6 +52,34 @@ settled.
 vocabulary straight onto its official English and remove the guesswork from every future map.
 Worth asking for before starting one.
 
+## There is an EN–ES–PT concordance, and it is a lead rather than an authority
+
+The maintainer has a locally-held concordance mapping **616 English glossary lemmas** to
+their Spanish and Portuguese equivalents, with explicit confidence tiers (three ticks =
+definitions compared in all three languages; `≈` = still unresolved). It lives outside
+the repo and must stay there.
+
+**It is genuinely useful, and it corroborated independently-derived changes**, which is
+the strongest thing that can be said for it: *Discrimination* ↔ ES *discernimiento* at
+top confidence, *sense/mental awareness* ↔ *percepción sensorial/mental*, *Appearing
+object* ↔ ES *objeto aparente* (which is where the page's earlier "Apparent object" came
+from), *Manifest*/*Hidden object*, and all three *scope practitioner* names exactly as
+landed on.
+
+**But it is not a substitute for reading the book, and one entry proves it.** It gives
+*Dullness* → ES *"pesadez mental / hundimiento"*, while separately mapping *Mental
+sinking* → *hundimiento mental* — the same Spanish word to two English lemmas. The book
+settles it and warns against precisely this: *we must distinguish between sopor and
+mental sinking; sopor is the cause of mental sinking and is always a delusion, whereas
+mental sinking is not necessarily one.* The Spanish for **Dullness is sopor.**
+
+**It also has holes where the page needs it most.** No lemma at all for **cognizer** —
+the single most-used term on map 1 — nor for *shamelessness*, *five similarities*, or
+*eye consciousness*. Absence there is not evidence either way.
+
+**So: mine it for candidates, then confirm each one against the glossary or the book.**
+A tick in a third-party table is a reason to look, never a reason to write.
+
 **Do not copy the glossary into the repo.** Its own footer asserts copyright — New Kadampa
 Tradition, from the Collected Works — so it is source material like the book: consult it
 freely, keep it outside the repo, quote a definition only in brief.
