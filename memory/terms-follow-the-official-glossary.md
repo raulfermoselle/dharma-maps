@@ -66,19 +66,33 @@ object* ↔ ES *objeto aparente* (which is where the page's earlier "Apparent ob
 from), *Manifest*/*Hidden object*, and all three *scope practitioner* names exactly as
 landed on.
 
-**But it is not a substitute for reading the book, and one entry proves it.** It gives
-*Dullness* → ES *"pesadez mental / hundimiento"*, while separately mapping *Mental
-sinking* → *hundimiento mental* — the same Spanish word to two English lemmas. The book
-settles it and warns against precisely this: *we must distinguish between sopor and
-mental sinking; sopor is the cause of mental sinking and is always a delusion, whereas
-mental sinking is not necessarily one.* The Spanish for **Dullness is sopor.**
+**It was not a substitute for reading the book, and one entry proved it.** It gave
+*Dullness* → ES *"pesadez mental / hundimiento"* while separately mapping *Mental
+sinking* → *hundimiento mental* — one Spanish word to two English lemmas. The book warns
+against precisely that: *we must distinguish between sopor and mental sinking; sopor is
+the cause of mental sinking and is always a delusion, whereas mental sinking is not
+necessarily one.* **Dullness is sopor**, and the row is now corrected.
 
-**It also has holes where the page needs it most.** No lemma at all for **cognizer** —
-the single most-used term on map 1 — nor for *shamelessness*, *five similarities*, or
-*eye consciousness*. Absence there is not evidence either way.
+**The maintainer has since asked for the file to be edited directly**, so it is a working
+reference rather than a received document. What has been folded into it:
 
-**So: mine it for candidates, then confirm each one against the glossary or the book.**
-A tick in a third-party table is a reason to look, never a reason to write.
+- The **Spanish edition's own section headings** now back the ES column for the mental
+  factors — **61 of 65 terms agree**, which is real validation of the column the file
+  itself flags as its weakest. The four that differ are annotated in place: the ES
+  glossary and the 2014 Spanish edition genuinely use different words (*sentido de
+  vergüenza* vs *sentido del honor*, *falta de fe* vs *antifé*, *autosatisfacción* vs
+  *satisfacción propia*, *no determinativo* vs *no determinante*). **Both are right for
+  their own source — record the difference, do not overwrite one with the other.**
+- Six lemmas added that it lacked, including **cognizer** (*conocedor* / *conhecedor*),
+  the single most-used term on map 1.
+- An **Em aberto** section for what is still unresolved, and recomputed tallies.
+
+**It still has holes.** Nothing for *five similarities* or the six consciousnesses
+individually, so it cannot speak to the *eye/ear/nose* naming. Absence there is not
+evidence either way.
+
+**So: mine it for candidates, then confirm each against the glossary or the book.**
+A tick in a table is a reason to look, never a reason to write.
 
 **Do not copy the glossary into the repo.** Its own footer asserts copyright — New Kadampa
 Tradition, from the Collected Works — so it is source material like the book: consult it
