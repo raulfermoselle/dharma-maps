@@ -1,6 +1,6 @@
 # Dharma Maps
 
-Structural maps of Buddhist teachings, kept in git so they can be corrected over time.
+Maps of Buddhist teachings, kept in git so they can be corrected over time.
 
 Each map is a single self-contained HTML page — no build step, no dependencies, no
 JavaScript beyond what the page needs for its own term definitions. Open any of them
