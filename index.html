@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Dharma Maps</title>
+<style>
+  :root {
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Cambria, Georgia, "Times New Roman", serif;
+    --sans: system-ui, "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+    --ground: #E6E4DC;
+    --panel: #F3F1EB;
+    --card: #FBFAF6;
+    --ink: #23252F;
+    --ink-2: #565A68;
+    --ink-3: #898C98;
+    --line: rgba(35,37,47,0.14);
+    --line-2: rgba(35,37,47,0.26);
+    --shadow: 0 1px 2px rgba(35,37,47,0.06), 0 8px 24px rgba(35,37,47,0.06);
+    --lapis: #2C4B86;
+    --saffron: #B0761C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #111319;
+      --panel: #191C24;
+      --card: #21242E;
+      --ink: #E9E9EC;
+      --ink-2: #A8ABB6;
+      --ink-3: #767A87;
+      --line: rgba(255,255,255,0.10);
+      --line-2: rgba(255,255,255,0.20);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.35);
+      --lapis: #7EA2DD;
+      --saffron: #E0A94A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #111319; --panel: #191C24; --card: #21242E;
+    --ink: #E9E9EC; --ink-2: #A8ABB6; --ink-3: #767A87;
+    --line: rgba(255,255,255,0.10); --line-2: rgba(255,255,255,0.20);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.35);
+    --lapis: #7EA2DD; --saffron: #E0A94A;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding: clamp(20px, 5vw, 64px);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--saffron); font-weight: 600; margin: 0 0 8px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(30px, 6vw, 44px); line-height: 1.05;
+    letter-spacing: -0.01em; margin: 0;
+  }
+  .lede {
+    font-family: var(--serif); font-style: italic; color: var(--ink-2);
+    font-size: clamp(14px, 2vw, 17px); margin: 12px 0 0; max-width: 56ch;
+  }
+
+  .rule { border: 0; border-top: 1.5px solid var(--line-2); margin: 28px 0 24px; }
+
+  .maps { display: grid; gap: 14px; }
+  a.map {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 4px solid var(--lapis);
+    border-radius: 12px; padding: 16px 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+  a.map:hover, a.map:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 14px 34px rgba(0,0,0,0.12);
+  }
+  a.map:focus-visible { outline: 2px solid var(--lapis); outline-offset: 3px; }
+  .map__title { font-family: var(--serif); font-weight: 600; font-size: 19px; margin: 0; }
+  .map__sub { color: var(--ink-2); font-size: 12.5px; margin: 5px 0 0; }
+  .map__meta { color: var(--ink-3); font-size: 11px; margin: 8px 0 0; }
+
+  .note {
+    margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 11.5px; line-height: 1.6; color: var(--ink-3); max-width: 72ch;
+  }
+  .note b { color: var(--ink-2); font-weight: 600; }
+  .note + .note { border-top: 0; padding-top: 0; margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Personal study notes</p>
+  <h1>Dharma Maps</h1>
+  <p class="lede">Structural maps of Buddhist teachings — drawn to see how the pieces of a
+  teaching fit together, and kept here so they can be corrected over time.</p>
+
+  <hr class="rule">
+
+  <div class="maps">
+    <a class="map" href="mind/">
+      <p class="map__title">The Mind &amp; Its 51 Mental Factors</p>
+      <p class="map__sub">What mind is, how it is built, how it knows, and how it is transformed —
+      an entity-relationship model in four bands, with every term defined.</p>
+      <p class="map__meta">After Geshe Kelsang Gyatso, <i>How to Understand the Mind</i> (Tharpa Publications)</p>
+    </a>
+  </div>
+
+  <p class="note">
+    <b>These are a reader's maps, not sources.</b> Each one summarises a book and names it. They carry
+    no authority of their own, they are not affiliated with or endorsed by any publisher, teacher or
+    tradition, and they are no substitute for the books themselves — please read the originals. Quoted
+    definitions remain the copyright of their authors and publishers, reproduced only briefly and only
+    for private study and discussion.
+  </p>
+  <p class="note">
+    Any error in a map is the compiler's, not the author's. If a rights holder would like a page amended
+    or taken down, that will be done on request.
+  </p>
+
+</div>
+</body>
+</html>

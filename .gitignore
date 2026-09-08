@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# This repository is PUBLIC. Source books are in copyright and must never be
+# committed here — not the PDFs, not extracted text, not scans. The maps in
+# this repo are original summaries that cite their sources; the sources
+# themselves stay off the internet.
+#
+# These rules are a safety net, not the plan. The plan is that book files live
+# outside this folder entirely.
+# ---------------------------------------------------------------------------
+
+# Books and scans, in any form
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.chm
+*.cbz
+*.cbr
+
+# Extracted / OCR'd source text
+*extract*.txt
+*apendice*
+*appendix-full*
+/sources/
+/books/
+/scans/
+
+# Research notes that quote sources at length — keep these local
+*deep-research*
+*-notes-private.*
+
+# OS and editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/

@@ -1,0 +1,1098 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>The Mind & Its 51 Mental Factors</title>
+<style>
+  :root {
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Cambria, Georgia, "Times New Roman", serif;
+    --sans: system-ui, "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+    /* light — stone manuscript */
+    --ground: #E6E4DC;
+    --panel: #F3F1EB;
+    --card: #FBFAF6;
+    --ink: #23252F;
+    --ink-2: #565A68;
+    --ink-3: #898C98;
+    --line: rgba(35,37,47,0.14);
+    --line-2: rgba(35,37,47,0.26);
+    --shadow: 0 1px 2px rgba(35,37,47,0.06), 0 8px 24px rgba(35,37,47,0.06);
+
+    --lapis: #2C4B86;
+    --teal: #2E6E72;
+    --saffron: #B0761C;
+    --jade: #3C7857;
+    --madder: #A23A2B;
+    --rose: #B4564A;
+    --slate: #6A6478;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #111319;
+      --panel: #191C24;
+      --card: #21242E;
+      --ink: #E9E9EC;
+      --ink-2: #A8ABB6;
+      --ink-3: #767A87;
+      --line: rgba(255,255,255,0.10);
+      --line-2: rgba(255,255,255,0.20);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.35);
+
+      --lapis: #7EA2DD;
+      --teal: #57B0B0;
+      --saffron: #E0A94A;
+      --jade: #66BC8F;
+      --madder: #E27B65;
+      --rose: #E1897C;
+      --slate: #AAA0C4;
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #E6E4DC; --panel: #F3F1EB; --card: #FBFAF6;
+    --ink: #23252F; --ink-2: #565A68; --ink-3: #898C98;
+    --line: rgba(35,37,47,0.14); --line-2: rgba(35,37,47,0.26);
+    --shadow: 0 1px 2px rgba(35,37,47,0.06), 0 8px 24px rgba(35,37,47,0.06);
+    --lapis: #2C4B86; --teal: #2E6E72; --saffron: #B0761C;
+    --jade: #3C7857; --madder: #A23A2B; --rose: #B4564A; --slate: #6A6478;
+  }
+  :root[data-theme="dark"] {
+    --ground: #111319; --panel: #191C24; --card: #21242E;
+    --ink: #E9E9EC; --ink-2: #A8ABB6; --ink-3: #767A87;
+    --line: rgba(255,255,255,0.10); --line-2: rgba(255,255,255,0.20);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.35);
+    --lapis: #7EA2DD; --teal: #57B0B0; --saffron: #E0A94A;
+    --jade: #66BC8F; --madder: #E27B65; --rose: #E1897C; --slate: #AAA0C4;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 13.5px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: clamp(14px, 3vw, 40px);
+  }
+  .wrap { max-width: 1440px; margin: 0 auto; }
+
+  /* ---- header ---- */
+  .masthead {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px 32px;
+    align-items: end;
+    padding-bottom: 18px;
+    border-bottom: 1.5px solid var(--line-2);
+    margin-bottom: 22px;
+  }
+  .masthead__eyebrow {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--saffron); font-weight: 600; margin: 0 0 6px;
+  }
+  .masthead h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(26px, 4.4vw, 46px);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+  .masthead__sub {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-2);
+    font-size: clamp(13px, 1.6vw, 16px);
+    margin: 8px 0 0;
+    max-width: 60ch;
+  }
+  .masthead__source { font-size: 11.5px; color: var(--ink-3); margin: 7px 0 0; }
+  .masthead__source b { color: var(--ink-2); font-weight: 600; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 6px 14px;
+    align-items: center;
+    max-width: 340px;
+    justify-content: flex-end;
+  }
+  .legend__item { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--ink-2); white-space: nowrap; }
+  .legend__dot { width: 10px; height: 10px; border-radius: 3px; background: var(--k); flex: none; }
+  @media (max-width: 680px) {
+    .masthead { grid-template-columns: 1fr; }
+    .legend { max-width: none; justify-content: flex-start; }
+  }
+
+  /* ---- bands ---- */
+  .band { margin-top: 26px; }
+  .band__head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+  .band__letter {
+    font-family: var(--serif);
+    font-size: 20px; font-weight: 700; line-height: 1;
+    color: var(--ground);
+    background: var(--accent, var(--lapis));
+    width: 30px; height: 30px; border-radius: 8px;
+    display: grid; place-items: center; flex: none;
+    transform: translateY(2px);
+  }
+  .band__title {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(17px, 2.3vw, 22px); margin: 0; color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+  .band__kicker { font-size: 12px; color: var(--ink-3); margin-left: auto; text-align: right; font-style: italic; }
+
+  /* ---- generic panel / card ---- */
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    padding: 12px 13px;
+  }
+  .card--accent { border-top: 3px solid var(--accent); }
+
+  .label {
+    font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 700; color: var(--accent, var(--ink-2)); margin: 0 0 7px;
+  }
+  .def { font-style: italic; font-family: var(--serif); color: var(--ink); font-size: 14px; line-height: 1.4; }
+  .def--sm { font-size: 12.5px; }
+  .muted { color: var(--ink-2); }
+  .tiny { font-size: 11px; color: var(--ink-3); }
+
+  ul.clean { list-style: none; margin: 0; padding: 0; }
+  ul.clean li { padding: 2px 0; }
+  .term { font-weight: 600; color: var(--ink); }
+
+  /* numbered chip */
+  .n {
+    display: inline-grid; place-items: center;
+    width: 17px; height: 17px; border-radius: 50%;
+    font-size: 10px; font-weight: 700; font-variant-numeric: tabular-nums;
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    color: var(--accent); margin-right: 7px; flex: none;
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  .row { display: flex; align-items: baseline; }
+
+  /* ============ A. NATURE ============ */
+  .a-grid { display: grid; grid-template-columns: minmax(280px, 0.95fr) 1.05fr; gap: 18px; }
+  @media (max-width: 760px){ .a-grid { grid-template-columns: 1fr; } }
+
+  .medallion {
+    position: relative;
+    display: grid; place-items: center;
+    aspect-ratio: 1 / 1;
+    width: 100%; max-width: 340px; margin: 0 auto;
+    border-radius: 50%;
+    isolation: isolate;
+  }
+  .medallion__rays {
+    position: absolute; inset: -6%; z-index: -1;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+      color-mix(in srgb, var(--saffron) 42%, transparent) 0deg 0.7deg,
+      transparent 0.7deg 6deg);
+    -webkit-mask: radial-gradient(circle, transparent 41%, #000 46%, #000 62%, transparent 78%);
+            mask: radial-gradient(circle, transparent 41%, #000 46%, #000 62%, transparent 78%);
+    opacity: 0.55;
+  }
+  .medallion__disc {
+    width: 82%; height: 82%; border-radius: 50%;
+    display: grid; place-items: center; text-align: center;
+    padding: 8%;
+    border: 1.5px solid color-mix(in srgb, var(--lapis) 45%, transparent);
+    background:
+      radial-gradient(circle at 50% 38%,
+        color-mix(in srgb, var(--lapis) 20%, var(--card)) 0%,
+        var(--card) 68%);
+    box-shadow: var(--shadow), inset 0 0 34px color-mix(in srgb, var(--lapis) 12%, transparent);
+  }
+  .medallion__word {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(30px, 6vw, 46px); letter-spacing: 0.04em; line-height: 1;
+    color: var(--lapis); margin: 0 0 6px;
+  }
+  .medallion__def { font-family: var(--serif); font-style: italic; font-size: 12.5px; line-height: 1.35; color: var(--ink); margin: 0; }
+  .medallion__def b { font-style: normal; font-weight: 600; color: var(--ink); }
+
+  .stack { display: flex; flex-direction: column; gap: 12px; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px){ .duo { grid-template-columns: 1fr; } }
+  .chiplist { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .chip {
+    font-size: 11.5px; padding: 3px 9px; border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--accent) 34%, transparent);
+    background: color-mix(in srgb, var(--accent) 9%, transparent);
+    color: var(--ink);
+  }
+  .chip b { color: var(--accent); font-weight: 700; }
+
+  /* ============ B. FACTORS ============ */
+  .b-top { display: grid; grid-template-columns: 1fr 1fr 1.15fr; gap: 14px; margin-bottom: 16px; }
+  @media (max-width: 860px){ .b-top { grid-template-columns: 1fr; } }
+  .consciousness { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px 14px; margin-top: 8px; }
+  @media (max-width: 380px){ .consciousness { grid-template-columns: 1fr; } }
+
+  .flame-note {
+    font-family: var(--serif); font-style: italic; color: var(--ink-2);
+    font-size: 12.5px; border-left: 2px solid var(--saffron); padding-left: 10px; margin-top: 10px;
+  }
+  .sim { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .sim span { font-size: 11.5px; padding: 3px 10px; border-radius: 7px; background: color-mix(in srgb, var(--teal) 12%, transparent); border: 1px solid color-mix(in srgb, var(--teal) 30%, transparent); color: var(--ink); }
+
+  .groups { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 12px; }
+  @media (max-width: 1180px){ .groups { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  @media (max-width: 720px){ .groups { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  @media (max-width: 460px){ .groups { grid-template-columns: 1fr; } }
+
+  .group { display: flex; flex-direction: column; }
+  .group__head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .group__count {
+    font-family: var(--serif); font-weight: 700; font-size: 15px;
+    color: var(--ground); background: var(--accent);
+    min-width: 26px; height: 24px; padding: 0 6px; border-radius: 7px;
+    display: grid; place-items: center; flex: none; font-variant-numeric: tabular-nums;
+  }
+  .group__name { font-weight: 700; font-size: 12.5px; color: var(--ink); line-height: 1.15; }
+  .group__def { font-size: 11.5px; color: var(--ink-2); margin: 0 0 9px; line-height: 1.4; }
+  .group ol { list-style: none; margin: 0; padding: 0; counter-reset: f; }
+  .group ol li { counter-increment: f; padding: 3px 0; border-top: 1px solid var(--line); line-height: 1.32; }
+  .group ol li:first-child { border-top: none; }
+  .group ol li::before {
+    content: counter(f); font-variant-numeric: tabular-nums;
+    color: var(--accent); font-weight: 700; font-size: 10px;
+    margin-right: 6px;
+  }
+  .group li .fn { display: block; color: var(--ink-3); font-size: 10.5px; line-height: 1.3; margin-left: 15px; }
+  .group ol.two { columns: 2; column-gap: 14px; }
+  @media (max-width: 1180px){ .group ol.two { columns: 2; } }
+
+  /* small sub-note under a group */
+  .subnote { font-size: 10.5px; color: var(--ink-3); margin-top: 8px; font-style: italic; }
+
+  /* moral strip */
+  .moral { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 12px; margin-top: 14px; }
+  @media (max-width: 860px){ .moral { grid-template-columns: 1fr; } }
+  .oppose { display: grid; grid-template-columns: 1fr auto 1fr; gap: 2px 10px; align-items: center; margin-top: 6px; }
+  .oppose .v { color: var(--jade); font-weight: 600; text-align: right; font-size: 11.5px; }
+  .oppose .d { color: var(--madder); font-weight: 600; font-size: 11.5px; }
+  .oppose .ar { color: var(--ink-3); text-align: center; }
+
+  /* ============ C. EPISTEMOLOGY ============ */
+  .c-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px){ .c-grid { grid-template-columns: 1fr; } }
+  .subcards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  @media (max-width: 520px){ .subcards { grid-template-columns: 1fr; } }
+
+  .tbl-wrap { overflow-x: auto; margin-top: 4px; }
+  table.knowers { border-collapse: collapse; width: 100%; font-size: 11.5px; }
+  table.knowers th, table.knowers td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.knowers thead th { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; border-bottom: 1.5px solid var(--line-2); }
+  table.knowers td:first-child { white-space: nowrap; }
+  table.knowers .kn { font-weight: 600; color: var(--ink); }
+  table.knowers .kn .num { color: var(--saffron); font-weight: 700; margin-right: 5px; font-variant-numeric: tabular-nums; }
+  .badge { font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; padding: 1px 6px; border-radius: 5px; display: inline-block; white-space: nowrap; }
+  table.knowers td:last-child { white-space: nowrap; width: 1%; }
+  .badge--v { color: var(--jade); background: color-mix(in srgb, var(--jade) 15%, transparent); border: 1px solid color-mix(in srgb, var(--jade) 34%, transparent); }
+  .badge--n { color: var(--madder); background: color-mix(in srgb, var(--madder) 14%, transparent); border: 1px solid color-mix(in srgb, var(--madder) 32%, transparent); }
+  .valid-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .valid-row > div { flex: 1 1 200px; }
+
+  /* ============ D. DYNAMICS ============ */
+  .d-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 16px; }
+  @media (max-width: 960px){ .d-grid { grid-template-columns: 1fr; } }
+
+  .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; margin-top: 4px; }
+  .node {
+    border-radius: 9px; padding: 7px 11px; font-size: 11.5px; line-height: 1.25;
+    border: 1px solid var(--nc); background: color-mix(in srgb, var(--nc) 9%, var(--card));
+    color: var(--ink); display: flex; align-items: center; justify-content: center; text-align: center; flex: 1 1 auto; min-width: 0;
+  }
+  .node b { display: block; font-weight: 700; }
+  .node small { color: var(--ink-3); font-size: 10px; }
+  .arrow { display: flex; align-items: center; color: var(--nc); font-weight: 700; font-size: 15px; flex: none; }
+  .chain { margin-top: 6px; }
+  .chain__label { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+  .chain--neg { --nc: var(--madder); }
+  .chain--neg .chain__label { color: var(--madder); }
+  .chain--pos { --nc: var(--jade); }
+  .chain--pos .chain__label { color: var(--jade); }
+
+  .path-list { list-style: none; margin: 8px 0 0; padding: 0; counter-reset: p; }
+  .path-list li { counter-increment: p; display: flex; align-items: center; gap: 9px; padding: 3.5px 0; font-size: 12px; }
+  .path-list li::before {
+    content: counter(p); font-variant-numeric: tabular-nums;
+    width: 18px; height: 18px; border-radius: 50%; flex: none;
+    display: grid; place-items: center; font-size: 10px; font-weight: 700;
+    color: var(--ground); background: var(--lapis);
+  }
+  .med { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 4px; }
+  @media (max-width: 640px){ .med { grid-template-columns: 1fr; } }
+  .med__col { border-radius: 10px; padding: 10px 11px; border: 1px solid var(--line); border-top: 3px solid var(--mc); background: var(--card); }
+  .med__col h4 { margin: 0 0 6px; font-family: var(--serif); font-size: 13px; color: var(--ink); font-weight: 600; }
+  .med__col h4 span { display: block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mc); font-weight: 700; font-family: var(--sans); }
+  .med__col ul { list-style: none; margin: 0; padding: 0; }
+  .med__col li { font-size: 11px; padding: 2.5px 0; border-top: 1px dotted var(--line); color: var(--ink-2); line-height: 1.3; }
+  .med__col li:first-child { border-top: none; }
+
+  .wisdoms { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .wisdoms span { font-size: 11px; padding: 4px 10px; border-radius: 8px; background: color-mix(in srgb, var(--saffron) 12%, transparent); border: 1px solid color-mix(in srgb, var(--saffron) 30%, transparent); color: var(--ink); }
+  .wisdoms b { color: var(--saffron); }
+
+  /* positive course — vertical convergence */
+  .vflow { display: flex; flex-direction: column; gap: 5px; margin-top: 4px; }
+  .vstage { display: flex; flex-wrap: wrap; gap: 6px; align-items: stretch; }
+  .vstage > * { flex: 1 1 150px; }
+  .vstage .arrow { flex: none; }
+  .vdown { text-align: center; color: var(--nc); font-weight: 700; font-size: 14px; line-height: 0.8; }
+  .stage-tag { flex-basis: 100%; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin-bottom: -1px; }
+  .fruit { font-size: 11px; border-radius: 9px; padding: 7px 11px; color: var(--ink); display: flex; align-items: center; justify-content: center; text-align: center;
+    border: 1px solid color-mix(in srgb, var(--jade) 34%, transparent);
+    background: color-mix(in srgb, var(--jade) 9%, var(--card)); }
+  .fruit b { font-weight: 700; }
+  .fruit small { color: var(--ink-3); }
+
+  /* knower example sub-line */
+  table.knowers .ex { color: var(--ink-3); font-size: 10px; margin-top: 2px; line-height: 1.3; }
+
+  /* inline sub-axis under conceptual/sense cards */
+  .axis { margin: 7px 0 0; padding: 0; list-style: none; }
+  .axis li { font-size: 10.5px; color: var(--ink-2); padding: 1.5px 0; line-height: 1.32; }
+  .axis li b { color: var(--ink); font-weight: 600; }
+  .axis--o li::before { content: "▸ "; color: var(--accent); }
+
+  .foot {
+    margin-top: 26px; padding-top: 16px; border-top: 1.5px solid var(--line-2);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px;
+    font-family: var(--serif); font-style: italic; color: var(--ink-2); font-size: 13px;
+  }
+  .foot .seal { font-style: normal; font-weight: 700; color: var(--saffron); font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .foot .fnote { font-size: 11.5px; color: var(--ink-3); }
+  .foot__rights {
+    flex-basis: 100%;
+    margin: 6px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 11px;
+    line-height: 1.55;
+    color: var(--ink-3);
+    max-width: 100ch;
+  }
+  .foot__rights b { color: var(--ink-2); font-weight: 600; }
+  .foot__rights i { font-style: italic; }
+
+  /* section tinting */
+  .band--a { --accent: var(--lapis); }
+  .band--b { --accent: var(--saffron); }
+  .band--c { --accent: var(--saffron); }
+  .band--d { --accent: var(--madder); }
+
+  .g-always  { --accent: var(--lapis); }
+  .g-object  { --accent: var(--teal); }
+  .g-virtue  { --accent: var(--jade); }
+  .g-root    { --accent: var(--madder); }
+  .g-second  { --accent: var(--rose); }
+  .g-var     { --accent: var(--slate); }
+
+  a.top { display:none; }
+
+  /* ---- clickable terms + popover ---- */
+  button.t {
+    font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0;
+    cursor: pointer; text-align: inherit;
+    border-bottom: 1.5px dotted color-mix(in srgb, var(--accent, var(--lapis)) 55%, transparent);
+    transition: background 0.12s, color 0.12s;
+    border-radius: 2px;
+  }
+  button.t:hover { color: var(--accent, var(--lapis)); background: color-mix(in srgb, var(--accent, var(--lapis)) 12%, transparent); }
+  button.t:focus-visible { outline: 2px solid var(--accent, var(--lapis)); outline-offset: 2px; }
+  /* terms that carry an example get a small marker */
+  button.t.has-ex::after { content: "✦"; font-size: 0.72em; color: var(--saffron); margin-left: 2px; vertical-align: super; line-height: 0; }
+  button.t--plain { border-bottom: none; }
+  .label button.t { color: inherit; }
+
+  #tip {
+    position: fixed; margin: 0; inset: auto;
+    max-width: min(360px, calc(100vw - 24px));
+    background: var(--card); color: var(--ink);
+    border: 1px solid var(--line-2);
+    border-left: 4px solid var(--tip-accent, var(--lapis));
+    border-radius: 12px;
+    padding: 14px 16px 15px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.14), 0 20px 50px rgba(0,0,0,0.22);
+    font-family: var(--sans);
+    z-index: 50;
+  }
+  #tip::backdrop { background: rgba(10,12,18,0.28); }
+  @media (prefers-color-scheme: dark) { #tip::backdrop { background: rgba(0,0,0,0.5); } }
+  :root[data-theme="dark"] #tip::backdrop { background: rgba(0,0,0,0.5); }
+  :root[data-theme="light"] #tip::backdrop { background: rgba(10,12,18,0.28); }
+  .tip__term { font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--tip-accent, var(--lapis)); margin: 0 0 3px; line-height: 1.15; }
+  .tip__kind { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; margin: 0 0 8px; }
+  .tip__def { font-family: var(--serif); font-style: italic; font-size: 13.5px; line-height: 1.45; color: var(--ink); margin: 0; }
+  .tip__ex { margin: 11px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink); }
+  .tip__exlabel { display: block; font-family: var(--sans); font-style: normal; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: var(--saffron); margin-bottom: 3px; }
+  .tip__close { position: absolute; top: 9px; right: 11px; background: none; border: 0; color: var(--ink-3); font-size: 17px; line-height: 1; cursor: pointer; padding: 2px; }
+  .tip__close:hover { color: var(--ink); }
+  .tip__hint { margin: 0 0 0; }
+
+  .howto { font-size: 11.5px; color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; }
+  .howto b { color: var(--saffron); }
+
+  @media print {
+    body { padding: 0; background: #fff; }
+    .panel, .card, .med__col, .node { box-shadow: none; }
+    .band { break-inside: avoid; }
+    .group, .med__col { break-inside: avoid; }
+  }
+  @page { size: landscape; margin: 12mm; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .band { animation: rise 0.5s ease both; }
+    .band--b { animation-delay: 0.05s; }
+    .band--c { animation-delay: 0.1s; }
+    .band--d { animation-delay: 0.15s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <p class="masthead__eyebrow">Kadampa Buddhism · A map of the mind</p>
+      <h1>The Mind &amp; Its 51 Mental Factors</h1>
+      <p class="masthead__sub">An entity-relationship model of the core teaching in <i>How to Understand the Mind</i> — what mind is, how it is built, how it knows, and how it is transformed.</p>
+      <p class="masthead__source">After <b>Geshe Kelsang Gyatso</b>, <i>How to Understand the Mind</i> (<b>Tharpa Publications</b>) · synthesised from Appendix&nbsp;1, <b>“The Concise Meaning of the Text,”</b> with examples drawn from the body chapters.</p>
+      <p class="masthead__source" style="margin-top:6px">An <b>unofficial study aid</b> — not affiliated with or endorsed by Tharpa Publications. See the notice at the foot of this page.</p>
+      <p class="masthead__source" style="margin-top:6px"><b style="color:var(--saffron)">Interactive:</b> tap any <span style="border-bottom:1.5px dotted var(--lapis)">underlined term</span> for its definition; those marked <span style="color:var(--saffron)">✦</span> also carry one of Geshe-la’s own examples.</p>
+    </div>
+    <div class="legend" aria-label="Colour key">
+      <span class="legend__item" style="--k:var(--lapis)"><span class="legend__dot"></span>Structure &amp; nature</span>
+      <span class="legend__item" style="--k:var(--saffron)"><span class="legend__dot"></span>Knowing / cognition</span>
+      <span class="legend__item" style="--k:var(--jade)"><span class="legend__dot"></span>Virtue</span>
+      <span class="legend__item" style="--k:var(--madder)"><span class="legend__dot"></span>Delusion</span>
+      <span class="legend__item" style="--k:var(--slate)"><span class="legend__dot"></span>Variable</span>
+    </div>
+  </header>
+
+  <!-- ============ A ============ -->
+  <section class="band band--a">
+    <div class="band__head">
+      <span class="band__letter">A</span>
+      <h2 class="band__title">Nature &amp; Levels of Mind</h2>
+      <span class="band__kicker">What mind <i>is</i>, and its broadest divisions</span>
+    </div>
+    <div class="panel">
+      <div class="a-grid">
+        <div class="medallion">
+          <span class="medallion__rays" aria-hidden="true"></span>
+          <div class="medallion__disc">
+            <div>
+              <p class="medallion__word"><button class="t t--plain" data-term="Mind">Mind</button></p>
+              <p class="medallion__def"><b>Definition:</b> that which is <i>clarity and knowing</i>. Its <b>nature</b> is empty like space, always lacking form, shape and colour; its <b>function</b> is to perceive or know objects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="duo">
+            <div class="card card--accent">
+              <p class="label">Classified by level</p>
+              <ul class="clean">
+                <li class="row"><span class="n">1</span><span><button class="t term" data-term="Gross mind">Gross mind</button> — waking, sense-based</span></li>
+                <li class="row"><span class="n">2</span><span><button class="t term" data-term="Subtle mind">Subtle mind</button> — for example, dreaming</span></li>
+                <li class="row"><span class="n">3</span><span><button class="t term" data-term="Very subtle mind">Very subtle mind</button> — deep sleep, death, clear light</span></li>
+              </ul>
+            </div>
+            <div class="card card--accent">
+              <p class="label">Classified by function</p>
+              <ul class="clean">
+                <li class="row"><span class="n">1</span><span><button class="t term" data-term="Primary minds">Primary minds</button> — apprehend the mere entity</span></li>
+                <li class="row"><span class="n">2</span><span><button class="t term" data-term="Mental factors">Mental factors</button> — apprehend specific characteristics</span></li>
+              </ul>
+              <p class="tiny" style="margin-top:8px">The engine of section&nbsp;B below.</p>
+            </div>
+          </div>
+          <div class="card">
+            <p class="label">Synonyms in technical usage</p>
+            <div class="chiplist">
+              <span class="chip"><b>mind</b></span>
+              <span class="chip"><b>awareness</b></span>
+              <span class="chip"><b>knower</b></span>
+              <span class="chip"><b>consciousness</b></span>
+              <span class="chip"><b>mentality</b></span>
+            </div>
+            <p class="tiny" style="margin-top:8px">“Primary mind”, “mentality” and “consciousness” are treated as synonyms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ B ============ -->
+  <section class="band band--b">
+    <div class="band__head">
+      <span class="band__letter">B</span>
+      <h2 class="band__title">Primary Minds &amp; the 51 Mental Factors</h2>
+      <span class="band__kicker">Every moment of mind = one primary mind + its accompanying factors</span>
+    </div>
+
+    <div class="panel">
+      <div class="b-top">
+        <div class="card" style="--accent:var(--lapis)">
+          <p class="label"><button class="t" data-term="Primary mind">Primary mind</button></p>
+          <p class="def def--sm">“The knower that principally apprehends the <i>mere entity</i> of an object.”</p>
+          <p class="tiny" style="margin:8px 0 2px"><button class="t" data-term="Six consciousnesses">Six primary minds</button> (consciousnesses):</p>
+          <div class="consciousness">
+            <span class="row"><span class="n">1</span>Visual (eye)</span>
+            <span class="row"><span class="n">2</span>Auditory (ear)</span>
+            <span class="row"><span class="n">3</span>Olfactory (nose)</span>
+            <span class="row"><span class="n">4</span>Gustatory (tongue)</span>
+            <span class="row"><span class="n">5</span>Body</span>
+            <span class="row"><span class="n">6</span>Mental</span>
+          </div>
+        </div>
+        <div class="card" style="--accent:var(--teal)">
+          <p class="label"><button class="t" data-term="Mental factor">Mental factor</button></p>
+          <p class="def def--sm">“The knower that principally apprehends a <i>specific characteristic</i> of an object.”</p>
+          <p class="flame-note">A primary mind is like <button class="t" data-term="Flame and its rays">a flame; its mental factors are like its rays</button> — one arising, one object, but different roles.</p>
+        </div>
+        <div class="card" style="--accent:var(--teal)">
+          <p class="label"><button class="t" data-term="Five similarities">Five similarities</button></p>
+          <p class="tiny" style="margin:0 0 2px">A primary mind &amp; its factors always share:</p>
+          <div class="sim">
+            <span>basis</span><span>object</span><span>aspect</span><span>time</span><span>substance</span>
+          </div>
+          <p class="tiny" style="margin-top:10px">The 51 factors fall into <b>6 groups</b> →</p>
+        </div>
+      </div>
+
+      <div class="groups">
+        <div class="group g-always">
+          <div class="group__head"><span class="group__count">5</span><button class="t group__name" data-term="Always-present">Always-present</button></div>
+          <p class="group__def">Minimum conditions present in <i>every</i> cognition.</p>
+          <ol>
+            <li><button class="t" data-term="Feeling">Feeling</button><span class="fn">experiences the object as pleasant / unpleasant / neutral · physical / mental · contaminated / uncontaminated</span></li>
+            <li><button class="t" data-term="Discernment">Discernment</button><span class="fn">apprehends the distinguishing characteristic · six, by consciousness · correct / erroneous · clear / confused</span></li>
+            <li><button class="t" data-term="Intention">Intention</button><span class="fn">directs the primary mind to the object; creates karma · harmful / virtuous / neutral · meritorious / non-meritorious / non-fluctuating</span></li>
+            <li><button class="t" data-term="Contact">Contact</button><span class="fn">contacts the object; basis of feeling · six, by consciousness</span></li>
+            <li><button class="t" data-term="Attention">Attention</button><span class="fn">focuses on a particular feature · correct / incorrect · appropriate / inappropriate</span></li>
+          </ol>
+        </div>
+
+        <div class="group g-object">
+          <div class="group__head"><span class="group__count">5</span><button class="t group__name" data-term="Object-ascertaining">Object-ascertaining</button></div>
+          <p class="group__def">Stabilise &amp; qualify the grip on the object — the ladder of learning &amp; meditation.</p>
+          <ol>
+            <li><button class="t" data-term="Aspiration">Aspiration</button><span class="fn">seeks a desired object: to meet / not part from / obtain / be free from · correct / incorrect</span></li>
+            <li><button class="t" data-term="Firm apprehension">Firm apprehension</button><span class="fn">holds the object firmly · correct / incorrect</span></li>
+            <li><button class="t" data-term="Mindfulness">Mindfulness</button><span class="fn">does not forget the object (memory) · new / old · with / without sinking &amp; excitement</span></li>
+            <li><button class="t" data-term="Concentration">Concentration</button><span class="fn">stays one-pointedly · 9 levels by realm (desire; 4 form; infinite space, infinite consciousness, nothingness, peak of samsara) · <button class="t" data-term="Nine mental placements">9 placements of the desire realm</button> · mundane / supramundane · conventional / ultimate object</span></li>
+            <li><button class="t" data-term="Wisdom">Wisdom</button><span class="fn">realises a meaningful object · from hearing / contemplation / meditation · 7 forms: great, clear, quick, profound, expounding Dharma, debate, composing texts</span></li>
+          </ol>
+        </div>
+
+        <div class="group g-virtue">
+          <div class="group__head"><span class="group__count">11</span><button class="t group__name" data-term="Virtuous">Virtuous</button></div>
+          <p class="group__def">Naturally virtuous — causes of peace &amp; the antidotes of the path.</p>
+          <ol>
+            <li><button class="t" data-term="Faith">Faith</button><span class="fn">believing · admiring · wishing</span></li>
+            <li><button class="t" data-term="Sense of shame">Sense of shame</button><span class="fn">restraint of body / speech / mind for one’s own sake</span></li>
+            <li><button class="t" data-term="Consideration for others">Consideration for others</button><span class="fn">restraint of body / speech / mind for others’ sake</span></li>
+            <li><button class="t" data-term="Non-attachment">Non-attachment</button><span class="fn">to places / enjoyments / bodies of samsara · to this life / samsara / solitary peace</span></li>
+            <li><button class="t" data-term="Non-hatred">Non-hatred</button><span class="fn">toward harmful beings / painful things / resulting suffering</span></li>
+            <li><button class="t" data-term="Non-ignorance">Non-ignorance</button><span class="fn">from hearing / contemplation / meditation / imprints</span></li>
+            <li><button class="t" data-term="Effort">Effort</button><span class="fn">armour · non-discouragement · application · non-satisfaction — with <button class="t" data-term="Four powers">4 powers</button>: aspiration, steadfastness, joy, relaxation</span></li>
+            <li><button class="t" data-term="Mental suppleness">Mental suppleness</button><span class="fn">subtle / gross — induced by concentration</span></li>
+            <li><button class="t" data-term="Conscientiousness">Conscientiousness</button><span class="fn">virtuous root of mundane / supramundane paths</span></li>
+            <li><button class="t" data-term="Equanimity">Equanimity</button><span class="fn">coarse-effort / subtle-effort / effortless</span></li>
+            <li><button class="t" data-term="Non-harmfulness">Non-harmfulness</button><span class="fn">compassion: wishing beings free from suffering / from its causes · mere / superior</span></li>
+          </ol>
+        </div>
+
+        <div class="group g-root">
+          <div class="group__head"><span class="group__count">6</span><button class="t group__name" data-term="Root delusions">Root delusions</button></div>
+          <p class="group__def">Roots of all disturbance &amp; suffering.</p>
+          <ol>
+            <li><button class="t" data-term="Attachment">Attachment</button><span class="fn">to past / present / future objects · of the desire / form / formless realm · to places / enjoyments / bodies of samsara</span></li>
+            <li><button class="t" data-term="Hatred">Hatred</button><span class="fn">9 ways of arising: past / present / future harm — to oneself, to loved ones, or help to enemies</span></li>
+            <li><button class="t" data-term="Deluded pride">Deluded pride</button><span class="fn">7 kinds: over inferiors, equals, superiors; pride of identity, presumptuous, emulative, wrong pride</span></li>
+            <li><button class="t" data-term="Ignorance">Ignorance</button><span class="fn">of conventional / ultimate truths · of karma / of emptiness</span></li>
+            <li><button class="t" data-term="Deluded doubt">Deluded doubt</button><span class="fn">leaning toward truth / away from truth / balanced</span></li>
+            <li><button class="t" data-term="Deluded view">Deluded view</button><span class="fn">5 kinds: <button class="t" data-term="View of the transitory collection">view of the transitory collection</button> · extreme view · wrong views held as supreme · wrong morality/conduct held as supreme · wrong view</span></li>
+          </ol>
+          <p class="subnote">Classified by realm · by cause (innate / intellectually acquired) · by entity (root / secondary). Each delusion spans 9 realms × 9 grades = 81 degrees.</p>
+        </div>
+
+        <div class="group g-second">
+          <div class="group__head"><span class="group__count">20</span><button class="t group__name" data-term="Secondary delusions">Secondary delusions</button></div>
+          <p class="group__def">Derived from &amp; intensifying the root delusions.</p>
+          <ol class="two">
+            <li><button class="t" data-term="Aggression">Aggression</button></li>
+            <li><button class="t" data-term="Resentment">Resentment</button></li>
+            <li><button class="t" data-term="Spite">Spite</button></li>
+            <li><button class="t" data-term="Jealousy">Jealousy</button></li>
+            <li><button class="t" data-term="Miserliness">Miserliness</button></li>
+            <li><button class="t" data-term="Concealment">Concealment</button></li>
+            <li><button class="t" data-term="Pretension">Pretension</button></li>
+            <li><button class="t" data-term="Denial">Denial</button></li>
+            <li><button class="t" data-term="Self-satisfaction">Self-satisfaction</button></li>
+            <li><button class="t" data-term="Malice">Malice</button></li>
+            <li><button class="t" data-term="Non-shame">Non-shame</button></li>
+            <li><button class="t" data-term="Inconsideration">Inconsideration</button></li>
+            <li><button class="t" data-term="Dullness">Dullness</button></li>
+            <li><button class="t" data-term="Distraction">Distraction</button></li>
+            <li><button class="t" data-term="Mental excitement">Mental excitement</button></li>
+            <li><button class="t" data-term="Non-faith">Non-faith</button></li>
+            <li><button class="t" data-term="Laziness">Laziness</button></li>
+            <li><button class="t" data-term="Unconscientiousness">Unconscientiousness</button></li>
+            <li><button class="t" data-term="Forgetfulness">Forgetfulness</button></li>
+            <li><button class="t" data-term="Non-alertness">Non-alertness</button></li>
+          </ol>
+        </div>
+
+        <div class="group g-var">
+          <div class="group__head"><span class="group__count">4</span><button class="t group__name" data-term="Variable">Variable</button></div>
+          <p class="group__def">Virtuous, non-virtuous or neutral depending on context.</p>
+          <ol>
+            <li><button class="t" data-term="Sleep">Sleep</button><span class="fn">arises from dullness; absorbs the sense perceptions</span></li>
+            <li><button class="t" data-term="Regret">Regret</button><span class="fn">over actions done in the past</span></li>
+            <li><button class="t" data-term="Investigation">Investigation</button><span class="fn">examines an object’s <i>gross</i> nature</span></li>
+            <li><button class="t" data-term="Analysis">Analysis</button><span class="fn">examines an object’s <i>subtle</i> nature</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="moral">
+        <div class="card" style="--accent:var(--jade)">
+          <p class="label"><button class="t" data-term="Virtue">Virtue</button></p>
+          <p class="tiny" style="margin:0 0 4px">The phenomenon that is the <i>main cause of happiness</i>. Five kinds:</p>
+          <p style="font-size:11.5px;margin:0" class="muted">natural · by association · by motivation · by subsequent relation · ultimate</p>
+        </div>
+        <div class="card" style="--accent:var(--madder)">
+          <p class="label"><button class="t" data-term="Non-virtue">Non-virtue</button></p>
+          <p class="tiny" style="margin:0 0 4px">The phenomenon that is the <i>main cause of suffering</i>. Five kinds:</p>
+          <p style="font-size:11.5px;margin:0" class="muted">natural · by association · by motivation · by subsequent relation · ultimate</p>
+        </div>
+        <div class="card">
+          <p class="label" style="color:var(--ink-2)">Virtuous factors directly oppose delusions</p>
+          <div class="oppose">
+            <span class="v">Non-attachment</span><span class="ar">→</span><span class="d">Attachment</span>
+            <span class="v">Non-hatred</span><span class="ar">→</span><span class="d">Hatred</span>
+            <span class="v">Non-ignorance</span><span class="ar">→</span><span class="d">Ignorance</span>
+            <span class="v">Non-harmfulness</span><span class="ar">→</span><span class="d">Malice</span>
+            <span class="v">Conscientiousness</span><span class="ar">→</span><span class="d">Unconscientiousness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ C ============ -->
+  <section class="band band--c">
+    <div class="band__head">
+      <span class="band__letter">C</span>
+      <h2 class="band__title">Ways Minds Know Objects</h2>
+      <span class="band__kicker">Epistemology — how knowing happens, and when it is reliable</span>
+    </div>
+
+    <div class="c-grid">
+      <div class="panel">
+        <p class="label" style="color:var(--saffron)">Conceptual vs nonconceptual mind</p>
+        <div class="subcards">
+          <div class="card" style="--accent:var(--saffron)">
+            <p class="label"><button class="t" data-term="Conceptual mind">Conceptual mind</button></p>
+            <p class="def def--sm">Apprehends its object by means of a <button class="t" data-term="Generic image"><i>generic image</i></button> (the appearing object of a conceptual mind).</p>
+            <p class="tiny" style="margin:9px 0 1px"><b>Five object-relations:</b></p>
+            <ul class="axis axis--o">
+              <li><button class="t" data-term="Apparent object"><b>Apparent</b> object</button> — how it appears</li>
+              <li><button class="t" data-term="Observed object"><b>Observed</b> object</button> — what is looked at</li>
+              <li><button class="t" data-term="Connected object"><b>Connected</b> object</button> — what it is held to</li>
+              <li><button class="t" data-term="Apprehended object"><b>Apprehended</b> object</button> — what is taken in</li>
+              <li><button class="t" data-term="Conceived object"><b>Conceived</b> object</button> — what is imagined</li>
+            </ul>
+            <p class="tiny" style="margin:8px 0 0"><b>Three origins:</b> hearing / reading · contemplating the meaning · previous imprints. Correct or mistaken.</p>
+          </div>
+          <div class="card" style="--accent:var(--saffron)">
+            <p class="label"><button class="t" data-term="Nonconceptual mind">Nonconceptual mind</button></p>
+            <p class="def def--sm">Its object appears <i>clearly</i>, unmixed with a generic image.</p>
+            <p class="tiny" style="margin:9px 0 1px"><b>Two main classes:</b></p>
+            <ul class="axis"><li>· sense perceptions</li><li>· nonconceptual mental perceptions</li></ul>
+            <p class="tiny" style="margin:8px 0 1px"><b>Three nonconceptual mental perceptions:</b></p>
+            <ul class="axis"><li>· direct mental perceivers</li><li>· yogic direct perceivers</li><li>· other nonconceptual mental perceptions</li></ul>
+            <p class="tiny" style="margin:8px 0 0">May also be correct or mistaken.</p>
+          </div>
+        </div>
+
+        <p class="label" style="color:var(--saffron);margin-top:16px">Sense vs mental perception</p>
+        <div class="subcards">
+          <div class="card" style="--accent:var(--saffron)">
+            <p class="label"><button class="t" data-term="Sense perception">Sense perception</button></p>
+            <p class="tiny" style="margin:0">Generated from a <i>form sense power</i>. Five: visual · auditory · olfactory · gustatory · body.</p>
+            <p class="tiny" style="margin:6px 0 0"><b>Dominant condition</b> — common / uncommon.</p>
+          </div>
+          <div class="card" style="--accent:var(--saffron)">
+            <p class="label"><button class="t" data-term="Mental perception">Mental perception</button></p>
+            <p class="tiny" style="margin:0">Generated from a <i>mental power</i> — the mentality that directly produces its particular aspect.</p>
+            <p class="tiny" style="margin:6px 0 0">Conceptual / nonconceptual · virtuous / non-virtuous / neutral.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="label" style="color:var(--saffron)">The seven categories of knower</p>
+        <p class="tiny" style="margin:-2px 0 6px">Ordered toward becoming a Superior being via yogic direct perceivers.</p>
+        <div class="tbl-wrap">
+          <table class="knowers">
+            <thead><tr><th>Knower</th><th>In one line &amp; subtypes</th><th>Valid?</th></tr></thead>
+            <tbody>
+              <tr><td class="kn"><span class="num">1</span><button class="t" data-term="Direct perceiver">Direct perceiver</button></td><td>apprehends its object correctly &amp; directly<div class="ex">sensory · mental · yogic direct perceivers</div></td><td><span class="badge badge--v">valid</span></td></tr>
+              <tr><td class="kn"><span class="num">2</span><button class="t" data-term="Subsequent cognizer">Subsequent cognizer</button></td><td>fully reliable knower via a conclusive reason<div class="ex">based on facts / belief / convention</div></td><td><span class="badge badge--v">valid</span></td></tr>
+              <tr><td class="kn"><span class="num">3</span><button class="t" data-term="Re-cognizer">Re-cognizer</button></td><td>realises what a previous valid knower already realised<div class="ex">conceptual / nonconceptual</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">4</span><button class="t" data-term="Correct belief">Correct belief</button></td><td>non-valid knower that realises its conceived object<div class="ex">depending / not depending on a reason</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">5</span><button class="t" data-term="Non-ascertaining perceiver">Non-ascertaining perceiver</button></td><td>perceives its object clearly but does not ascertain it<div class="ex">sensory / mental</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">6</span><button class="t" data-term="Non-deluded doubt">Non-deluded doubt</button></td><td>doubt that leans to truth &amp; yields good results<div class="ex">regarding ultimate truth / conventional truths</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">7</span><button class="t" data-term="Wrong awareness">Wrong awareness</button></td><td>mistaken with respect to its connected object<div class="ex">conceptual / nonconceptual · 7 sensory errors: form, colour, activity, number, time, measure, entity</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="valid-row">
+          <div class="card" style="--accent:var(--jade)">
+            <p class="label"><button class="t" data-term="Valid knower">Valid knower</button></p>
+            <p class="tiny" style="margin:0"><i>Non-deceptive</i> with respect to its connected object; knows a <button class="t" data-term="Manifest object"><b>manifest</b></button> or <button class="t" data-term="Hidden object"><b>hidden</b></button> object.</p>
+            <ul class="axis"><li>· <b>direct</b> valid — sensory / mental / yogic</li><li>· <b>subsequent</b> valid — by facts / belief / convention</li></ul>
+            <p class="tiny" style="margin:6px 0 0">“Valid” also names <b>valid teachers</b> &amp; <b>valid teachings</b>.</p>
+          </div>
+          <div class="card" style="--accent:var(--madder)">
+            <p class="label"><button class="t" data-term="Non-valid knower">Non-valid knower</button></p>
+            <p class="tiny" style="margin:0"><i>Deceptive</i> with respect to its object — conceptual or nonconceptual (knowers 3–7 above).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ D ============ -->
+  <section class="band band--d">
+    <div class="band__head">
+      <span class="band__letter">D</span>
+      <h2 class="band__title">Dynamics of Delusion, Virtue &amp; the Path</h2>
+      <span class="band__kicker">Why the map matters — mind as the ground of suffering &amp; of liberation</span>
+    </div>
+
+    <div class="d-grid">
+      <div class="panel">
+        <p class="tiny" style="margin:0 0 10px"><button class="t term" data-term="Delusion">Delusion</button> — a mental factor arising from <i>inappropriate attention</i> whose function is to disturb the mind and rob it of control. <button class="t" data-term="Six causes of delusion">Six causes</button>: seed · object · inappropriate attention · familiarity · distraction &amp; bad influence · bad habits.</p>
+
+        <div class="chain chain--neg">
+          <p class="chain__label">The negative course</p>
+          <div class="flow">
+            <span class="node"><span><b>Inappropriate attention</b><small>+ ignorance</small></span></span>
+            <span class="arrow">→</span>
+            <span class="node"><span><b>Delusions</b><small>root &amp; secondary</small></span></span>
+            <span class="arrow">→</span>
+            <span class="node"><span><b>Non-virtue</b><small>harmful intention</small></span></span>
+            <span class="arrow">→</span>
+            <span class="node"><span><b>Suffering &amp; samsara</b><small>cyclic</small></span></span>
+          </div>
+        </div>
+
+        <div class="chain chain--pos" style="margin-top:14px">
+          <p class="chain__label">The positive course</p>
+          <div class="vflow">
+            <div class="vstage">
+              <span class="stage-tag">Causes</span>
+              <span class="node"><span><b>Appropriate attention</b></span></span>
+              <span class="node"><span><b>Virtue</b><small>good actions, morality</small></span></span>
+              <span class="node"><span><b>Wisdom</b><small>hearing · contemplation · meditation</small></span></span>
+            </div>
+            <div class="vdown">↓</div>
+            <div class="vstage">
+              <span class="stage-tag">Fruits</span>
+              <span class="fruit"><b>Merit</b>&nbsp;<small>— happiness</small></span>
+              <span class="fruit"><b>Concentration</b>&nbsp;<small>— one-pointed mind</small></span>
+              <span class="fruit"><b>Compassion</b>&nbsp;<small>— care for all beings</small></span>
+            </div>
+            <div class="vdown">↓</div>
+            <div class="vstage">
+              <span class="stage-tag">Realisation</span>
+              <span class="node"><span><b>Correct understanding</b><small>reality · karma · emptiness</small></span></span>
+              <span class="arrow">→</span>
+              <span class="node"><span><b>Wisdom realising emptiness</b><small>final antidote to ignorance, attachment &amp; hatred</small></span></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="label" style="color:var(--slate);margin:18px 0 2px"><button class="t" data-term="Meditation">Meditation</button> — the path in practice</p>
+        <p class="tiny" style="margin:0 0 8px">“The mind that focuses convergently on a virtuous object to pacify &amp; calm the mind.” Three levels:</p>
+        <div class="med">
+          <div class="med__col" style="--mc:var(--lapis)">
+            <h4><span><button class="t" data-term="Initial being">Initial being</button></span>5 meditations</h4>
+            <ul>
+              <li><button class="t" data-term="Precious human life">Precious human life</button></li>
+              <li><button class="t" data-term="Death">Death &amp; impermanence</button></li>
+              <li>Dangers of lower rebirth</li>
+              <li><button class="t" data-term="Refuge">Going for refuge</button></li>
+              <li><button class="t" data-term="Karma">Karma</button></li>
+            </ul>
+          </div>
+          <div class="med__col" style="--mc:var(--teal)">
+            <h4><span><button class="t" data-term="Middling being">Middling being</button></span>4 meditations</h4>
+            <ul>
+              <li><button class="t" data-term="Renunciation">Renunciation</button></li>
+              <li>Recognising &amp; abandoning self-grasping</li>
+              <li>Entering the path to liberation</li>
+              <li>Ultimate truth of cessation</li>
+            </ul>
+          </div>
+          <div class="med__col" style="--mc:var(--saffron)">
+            <h4><span><button class="t" data-term="Superior being">Superior being</button></span>5 meditations</h4>
+            <ul>
+              <li><button class="t" data-term="Cherishing love">Cherishing love</button></li>
+              <li><button class="t" data-term="Universal compassion">Universal compassion</button></li>
+              <li><button class="t" data-term="Bodhichitta">Bodhichitta</button></li>
+              <li><button class="t" data-term="Six perfections">The six perfections</button></li>
+              <li>Training in yogic direct perceivers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="label" style="color:var(--lapis)">Progression on the path</p>
+        <ol class="path-list">
+          <li>Hearing &amp; reading</li>
+          <li>Contemplation</li>
+          <li>Meditation</li>
+          <li>Concentration</li>
+          <li>Union of tranquil abiding &amp; superior seeing</li>
+          <li>Yogic direct perceiver</li>
+          <li>Liberation</li>
+          <li>Enlightenment</li>
+        </ol>
+
+        <p class="label" style="color:var(--saffron);margin-top:16px">Three kinds of wisdom</p>
+        <div class="wisdoms">
+          <span>from <b>hearing</b></span>
+          <span>from <b>contemplation</b></span>
+          <span>from <b>meditation</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span class="seal">◈ Guard the mind</span>
+    <span>Mindfulness and vigilance guard the mind; the sense doors can be guarded through non-ascertaining perceivers.</span>
+    <span class="fnote">Note: the appendix states each delusion has “ninety-one grades”, but its own arithmetic (9 realms × 9) gives <b>81</b> — used here.</span>
+    <p class="foot__rights">
+      <b>Source and copyright.</b> This page is an unofficial, non-commercial study aid. It summarises the model of mind
+      set out in <i>How to Understand the Mind: The Nature and Power of the Mind</i> by <b>Geshe Kelsang Gyatso</b>,
+      published by <b>Tharpa Publications</b> — consulted here in the renewed Spanish edition,
+      <i>Cómo comprender la mente</i> (Editorial Tharpa, 2014; ISBN 978-84-15849-75-9), chiefly its Appendix 1,
+      “The Concise Meaning of the Text”.
+      <br><br>
+      The teaching, its structure, and all quoted definitions remain <b>© Geshe Kelsang Gyatso and Tharpa
+      Publications</b>, reproduced here only in brief and only for private study and discussion. This page is
+      <b>not affiliated with, reviewed by, or endorsed by</b> Tharpa Publications or the New Kadampa Tradition, and it
+      carries no authority of its own. It is a reader's map, not a source — and it is <b>no substitute for the book</b>.
+      Anyone studying this material should read the original: <i>How to Understand the Mind</i> is available from
+      Tharpa Publications.
+      <br><br>
+      Any error in this summary is the compiler's, not the author's. If a rights holder would like this page amended or
+      taken down, that will be done on request.
+    </p>
+  </footer>
+
+</div>
+
+<div id="tip" popover="auto" role="dialog" aria-label="Term detail">
+  <button class="tip__close" aria-label="Close" type="button">×</button>
+  <p class="tip__term"></p>
+  <p class="tip__kind"></p>
+  <p class="tip__def"></p>
+  <p class="tip__ex"></p>
+</div>
+
+<script>
+(function(){
+  const TIPS = {
+    "Mind": {kind:"The nature of mind", def:"That which is clarity and knowing — empty like space, always lacking form, shape and colour; its function is to perceive or know objects.", ex:"When we sleep and dream, the body lies as if dead while the mind separates from it and enters the dream world; this shows mind is entirely different from body, and that at death it leaves the body for the next life like a bird leaving one nest for another."},
+    "Gross mind": {kind:"Level of mind", def:"The coarsest, least stable level — the waking, sense-based minds.", ex:"In waking life, when the mind looks at the body or mind and thinks 'I' or 'mine', we mistake them for the self: when the body is sick we think 'I am sick', when it ages 'I am old'."},
+    "Subtle mind": {kind:"Level of mind", def:"A more subtle and stable level, such as the minds of dreaming.", ex:"When we dream we use subtle minds — dream visual, auditory and other perceptions — to experience dream objects. As Buddha said, 'know that all phenomena are like a dream.'"},
+    "Very subtle mind": {kind:"Level of mind", def:"The most subtle and stable mind, the continuously-abiding mind that manifests as clear light in deep sleep and at death.", ex:"Unlike the gross and subtle minds, which arise and vanish quickly like clouds, the very subtle mind continuously sustains life; it is precious like a jewel and normally manifests only in deep sleep and at the end of death."},
+    "Primary minds": {kind:"By function", def:"Knowers that principally apprehend the mere entity of an object. 'Primary mind', 'mentality' and 'consciousness' are synonyms.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its specific characteristics; the primary mind apprehends mainly the mere entity."},
+    "Mental factors": {kind:"By function", def:"Knowers that principally apprehend a specific characteristic of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body."},
+    "Primary mind": {kind:"Definition", def:"The knower that principally apprehends the mere entity of an object.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its specific characteristics; the primary mind apprehends mainly the mere entity."},
+    "Mental factor": {kind:"Definition", def:"The knower that principally apprehends a specific characteristic of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body."},
+    "Six consciousnesses": {kind:"Primary minds", def:"The six primary minds: visual, auditory, olfactory, gustatory, body and mental consciousness."},
+    "Flame and its rays": {kind:"Analogy", def:"The image for how a primary mind relates to its mental factors.", ex:"The primary mind is like a candle flame and its factors like the flame's rays: the rays spring from the flame and exist at the same time as it, and just as the flame illuminates with its rays, the primary mind knows its object with the help of its factors."},
+    "Five similarities": {kind:"Primary mind &amp; factors", def:"A primary mind and its factors always share five things: basis, object, aspect, time and substance.", ex:"When the gustatory consciousness tastes tea, the primary mind and its feeling share the same base (the taste sense power), the same object (the taste of the tea), the same time (they arise, abide and cease together) and the same substance."},
+
+    "Always-present": {kind:"Group 1 of 6", def:"The five factors present in every cognition: feeling, discernment, intention, contact and attention."},
+    "Feeling": {kind:"Always-present factor", def:"Experiences the object as pleasant, unpleasant or neutral.", ex:"Two people taste the same food and one finds it delicious, the other repugnant; the pleasant or unpleasant experience depends on one's own ripening karma, not on the object itself."},
+    "Discernment": {kind:"Always-present factor", def:"Apprehends the distinguishing characteristic of an object.", ex:"Looking at someone called Juan, one person identifies an enemy and another a friend; since 'friend' and 'enemy' are merely imputed by different minds, what Juan is depends on how the apprehending mind labels him."},
+    "Intention": {kind:"Always-present factor", def:"Focuses the primary mind on its object; the factor that creates karma.", ex:"If a tree falls and kills a person it accumulates no karma of killing, because it lacks the mental factor of intention; the karma beings create depends on this factor."},
+    "Contact": {kind:"Always-present factor", def:"Perceives its object as pleasant, unpleasant or neutral; the basis of feeling.", ex:"In the first moment the gustatory consciousness tastes tea, if the accompanying contact perceives it as agreeable, a pleasant feeling immediately follows — feelings are produced by contact."},
+    "Attention": {kind:"Always-present factor", def:"Focuses the mind on a particular feature of the object.", ex:"Intention is like a horse travelling a road and attention like the reins that steer it: intention moves the mind toward the object, attention focuses it on a specific characteristic."},
+
+    "Object-ascertaining": {kind:"Group 2 of 6", def:"Five factors that ascertain their object: aspiration, firm apprehension, mindfulness, concentration and wisdom."},
+    "Aspiration": {kind:"Object-ascertaining factor", def:"Focuses on a desired object and takes interest in it.", ex:"We are reading this book only because we first generated the wish to; yet some criminals are very clever, and because their aspirations are wrong their cleverness lands them in prison — intelligence without right aspiration brings suffering."},
+    "Firm apprehension": {kind:"Object-ascertaining factor", def:"Makes the mind hold its object firmly.", ex:"Without firm apprehension the mind is like river water, or a leaf blown about by the wind; this is why it is harder to hold the mind on a subtle object like emptiness than on a gross one like the breath."},
+    "Mindfulness": {kind:"Object-ascertaining factor", def:"Does not forget the object the mind has grasped (retentive memory).", ex:"Without mindfulness the mind is like a cracked vessel: however much we study, we cannot retain anything."},
+    "Concentration": {kind:"Object-ascertaining factor", def:"Keeps the mind fixed one-pointedly on its object.", ex:"A person with good concentration controls his mind and it obeys him, like a well-tamed horse obeying its rider; without even a little concentration we could not so much as make a cup of tea."},
+    "Nine mental placements": {kind:"Concentration", def:"The nine stages of the desire realm through which concentration is developed — from placing the mind up to stabilized placement."},
+    "Wisdom": {kind:"Object-ascertaining factor", def:"An intelligent virtuous mind that realizes a meaningful object.", ex:"Being clever at defeating enemies or getting what we want is not wisdom — even animals have that; rather, the mind is like a sky covered with clouds of ignorance, and wisdom is what dispels the clouds."},
+
+    "Virtuous": {kind:"Group 3 of 6", def:"Eleven naturally virtuous factors — causes of peace and the antidotes of the path."},
+    "Faith": {kind:"Virtuous factor", def:"Eliminates the lack of faith; believing, admiring or wishing.", ex:"Admiring faith is like a water-purifying jewel: when the mind is disturbed by bad thoughts it is like dirty water, and admiring faith settles them so the mind becomes lucid and pure, like clean, fresh water."},
+    "Sense of shame": {kind:"Virtuous factor", def:"Avoids misdeeds for reasons concerning oneself.", ex:"Refraining from swatting a mosquito about to bite us, thinking it is not right because we are Buddhists — that motivation is the sense of shame."},
+    "Consideration for others": {kind:"Virtuous factor", def:"Avoids misdeeds for reasons concerning others.", ex:"Refraining from saying something hurtful so as not to anger someone, or giving up fishing so as not to cause the fish to suffer."},
+    "Non-attachment": {kind:"Virtuous factor", def:"The direct opponent of attachment.", ex:"While attachment is strong we cannot control the mind and are at the mercy of circumstance, like a marionette on its strings; yet just as farmers use manure to fertilize soil, Bodhisattvas turn even attachment to the benefit of others."},
+    "Non-hatred": {kind:"Virtuous factor", def:"The direct opponent of hatred.", ex:"Hatred is like fire: spotted at its outset it is easily put out, but left to become a blaze it is very hard to control; catching anger as it first arises lets us counter it easily."},
+    "Non-ignorance": {kind:"Virtuous factor", def:"The direct opponent of ignorance.", ex:"Carrying a million euros in a bag would leave us anxious and in danger, but the wisdom realizing emptiness brings no such worry and is an inexhaustible source of help — the best friend and supreme wealth."},
+    "Effort": {kind:"Virtuous factor", def:"The mind delights in virtue.", ex:"Armour-like effort: as soldiers once protected their bodies with armour, Dharma practitioners declaring war on their delusions protect their minds with armour-like effort; and the effort of application should flow on ceaselessly like a great river."},
+    "Four powers": {kind:"Supports of effort", def:"Aspiration, steadfastness, joy and relaxation.", ex:"The power of joy: we should listen, contemplate and meditate with a flexible, happy mind, like a child at play, so we naturally train with enthusiasm."},
+    "Mental suppleness": {kind:"Virtuous factor", def:"Serviceability of mind induced by virtuous concentration (subtle and gross)."},
+    "Conscientiousness": {kind:"Virtuous factor", def:"Cherishes what is virtuous and protects the mind from delusions and non-virtue.", ex:"Crossing a busy street we take great care, yet the worst that can happen is losing this life; failing to guard the mind from delusions is far more dangerous. Shantideva: the maddened elephant of an unguarded mind is worse than any rampaging elephant, so tie the mind to virtue with the rope of mindfulness."},
+    "Equanimity": {kind:"Virtuous factor", def:"Keeps the primary mind free from mental sinking and excitement.", ex:"Just as we need make no effort to fall asleep, at the ninth mental placement the practitioner need only set the mind on its object and concentration arises spontaneously."},
+    "Non-harmfulness": {kind:"Virtuous factor", def:"Wishes that sentient beings do not suffer (compassion).", ex:"Compassion and the wish to harm are like water and fire, utterly incompatible; a truly compassionate person is simply incapable of wishing to harm another being."},
+
+    "Virtue": {kind:"Moral valuation", def:"The phenomenon that is the main cause of happiness (five kinds: natural, by association, by motivation, by subsequent relation, ultimate).", ex:"In prostrating out of faith: the faith is natural virtue; the accompanying feeling and discernment are virtue by association; the physical act is virtue by motivation; and the imprints left on the mind are virtue by subsequent relation."},
+    "Non-virtue": {kind:"Moral valuation", def:"The phenomenon that is the main cause of suffering (five kinds).", ex:"In killing a mosquito out of hatred: the hatred is non-virtue by nature; the accompanying factors are non-virtue by association; the act itself is non-virtue by motivation; and the imprints left on the mind are non-virtue by subsequent relation."},
+    "Delusion": {kind:"Psychopathology", def:"A mental factor arising from inappropriate attention whose function is to disturb the mind and rob it of control.", ex:"When hatred, jealousy or attachment arise they shatter our peace like a storm breaks a calm sea. The Geshe Ben Gungyel said his only practice was to drive a spear into the head of each delusion the moment it showed its ugly face."},
+    "Six causes of delusion": {kind:"Delusion", def:"Seed, object, inappropriate attention, familiarity, distraction &amp; bad influence, and bad habits.", ex:"Two friends in Pembo: the well-behaved one moved to Lhasa, worked in a tavern and became a drunkard; the ill-behaved one became a great Geshe's attendant, gave up drink and became a pure practitioner — their characters reversed by the company they kept."},
+
+    "Root delusions": {kind:"Group 4 of 6", def:"The six roots of all disturbance: attachment, hatred, deluded pride, ignorance, deluded doubt and deluded view."},
+    "Attachment": {kind:"Root delusion", def:"Observes a contaminated object, takes it to be a cause of happiness, and craves it.", ex:"Its faults fill daily life: craving drives criminals to prison; attachment leads us to harmful food and drink and so to illness; and it makes marriages break through unfaithfulness."},
+    "Hatred": {kind:"Root delusion", def:"Exaggerates an object's bad qualities, deems it undesirable, and wishes to harm it.", ex:"It arises in nine ways — toward whoever harmed, harms or will harm us or our loved ones, or helped our enemies. We even rage at the weather or disliked food, and the 'fire of hatred' can destroy years of kindness in an instant."},
+    "Deluded pride": {kind:"Root delusion", def:"Feels arrogance by considering and exaggerating one's own qualities or possessions (seven kinds).", ex:"Seven kinds: feeling superior to inferiors, equals, even superiors; pride of identity (proud merely of nationality, race or being a meditator); presumptuous pride (mistaking brief calm for real attainment); emulating pride (feeling nearly equal to Buddhas); and wrong pride (boasting of skill in killing or theft)."},
+    "Ignorance": {kind:"Root delusion", def:"Confused about the nature of an object; induces wrong awarenesses, doubts and other delusions.", ex:"Mistaking a rubber snake for a real one: not knowing the object's true nature (that it is a toy) is the ignorance, and out of that not-knowing the wrong awareness of a 'snake' is generated."},
+    "Deluded doubt": {kind:"Root delusion", def:"The two-pointed, wavering mind that obstructs liberation or enlightenment.", ex:"If our Guide teaches that virtue causes happiness and we think 'that is probably not true', that is deluded doubt; but a doubt moving toward the truth — beginning to wonder whether Buddhas exist after hearing teachings — is not deluded."},
+    "Deluded view": {kind:"Root delusion", def:"A deluded belief that obstructs liberation (five kinds, incl. the view of the transitory collection).", ex:"Because people follow different incorrect beliefs, countless problems arise; most conflicts and wars occur because each side holds its own ideas superior to its adversary's, whereas animals are free of such belief-caused strife."},
+    "View of the transitory collection": {kind:"Deluded view", def:"Grasping at the self of persons — clinging to the I as inherently existent.", ex:"Asked who is reading this book, we don't think 'my body' or 'my mind' is reading but simply 'I am' — and that I seems independent of body and mind. Like the boy named Buda who assumes he is a real Buddha until he looks and finds only a person with that name, the 'I' is merely a designation."},
+
+    "Secondary delusions": {kind:"Group 5 of 6", def:"Twenty factors derived from and intensifying the root delusions."},
+    "Aggression": {kind:"Secondary delusion", def:"An increase of hatred that wishes to harm others physically or verbally."},
+    "Resentment": {kind:"Secondary delusion", def:"Maintains the continuum of hatred without forgetting it, and wishes for revenge."},
+    "Spite": {kind:"Secondary delusion", def:"Motivated by resentment or aggression, wishes to speak offensive words."},
+    "Jealousy": {kind:"Secondary delusion", def:"Feels displeasure at others' enjoyments, good qualities or good fortune.", ex:"When a neighbour buys a car or a friend makes a new friendship and we feel jealous, we are disturbed at their good fortune; jealousy is like a thorn stuck in the heart, making the mind close in on itself."},
+    "Miserliness": {kind:"Secondary delusion", def:"Motivated by attachment, clings to possessions and will not let them go.", ex:"Out of miserliness we would keep our possessions forever, and when we lose them or must part with them we grieve and suffer anxiety."},
+    "Concealment": {kind:"Secondary delusion", def:"Motivated by attachment to wealth or reputation, wishes to hide our faults from others."},
+    "Pretension": {kind:"Secondary delusion", def:"Motivated by attachment to wealth or reputation, wishes to appear to have qualities we lack."},
+    "Denial": {kind:"Secondary delusion", def:"Does not wish to purify the harmful actions or moral downfalls we have committed."},
+    "Self-satisfaction": {kind:"Secondary delusion", def:"Preoccupied with our own beauty, wealth or good qualities, takes no interest in spiritual development.", ex:"Some believe they need observe no morality and may do as they please because they belong to a supposedly superior race or class — an attitude that ends up bringing them many problems."},
+    "Malice": {kind:"Secondary delusion", def:"Wishes that other sentient beings suffer."},
+    "Non-shame": {kind:"Secondary delusion", def:"The opposite of the sense of shame."},
+    "Inconsideration": {kind:"Secondary delusion", def:"The opposite of consideration for others."},
+    "Dullness": {kind:"Secondary delusion", def:"Produces physical and mental rigidity and heaviness.", ex:"Dullness is like darkness enveloping the mind so its object blurs, as when fog rolls in or night falls; Dharma teachings then seem unclear, though it is really our own mind that is clouded."},
+    "Distraction": {kind:"Secondary delusion", def:"Wanders after any object of the delusions.", ex:"Distraction makes the mind wander after contaminated objects — samsaric places, bodies or pleasures — so we cannot concentrate on spiritual practice."},
+    "Mental excitement": {kind:"Secondary delusion", def:"Wanders specifically after an object of attachment.", ex:"Because we are so familiar with objects of attachment, the moment we try to meditate mental excitement arises naturally and destroys our concentration."},
+    "Non-faith": {kind:"Secondary delusion", def:"The opposite of faith."},
+    "Laziness": {kind:"Secondary delusion", def:"Motivated by attachment to mundane pleasures or activity, feels aversion to virtuous activity.", ex:"A thornbush by Geshe Karakpa's cave scratched him and blocked the path; villagers assumed he was too lazy to prune it, but he was simply absorbed in retreat — an illustration of what laziness is NOT."},
+    "Unconscientiousness": {kind:"Secondary delusion", def:"Wishes to commit harmful actions without restraint."},
+    "Forgetfulness": {kind:"Secondary delusion", def:"Makes us forget virtuous objects."},
+    "Non-alertness": {kind:"Secondary delusion", def:"Makes us incur faults by being unable to tell what is a fault from what is not."},
+
+    "Variable": {kind:"Group 6 of 6", def:"Four factors — sleep, regret, investigation, analysis — that are virtuous, non-virtuous or neutral according to context."},
+    "Sleep": {kind:"Variable factor", def:"Arises from dullness or its imprints; absorbs the sense perceptions.", ex:"Skilled practitioners use sleeping, dreaming and waking to understand death: falling asleep is like dying, dreaming is like the intermediate state, and waking is like being reborn."},
+    "Regret": {kind:"Variable factor", def:"Regrets actions done in the past.", ex:"Virtuous: regretting past harmful acts. Pointless: someone born blind for a past harm gains nothing by regret now. Harmful: taking precepts in the morning then regretting them by afternoon out of hunger. Neutral: regretting food that caused indigestion."},
+    "Investigation": {kind:"Variable factor", def:"Examines an object to understand its gross nature.", ex:"Looking for our car and finding it, we stop enquiring and never ask 'what exactly is the car?'; only philosophical analysis examines phenomena that way — e.g. asking whether the body is one of its parts or the collection of them."},
+    "Analysis": {kind:"Variable factor", def:"Examines an object to understand its subtle nature.", ex:"Having grasped something roughly through investigation, we sharpen wisdom by examining it in detail — e.g. after a rough understanding of emptiness we analyze it closely to gain a clearer mental image before meditating."},
+
+    "Conceptual mind": {kind:"Epistemology", def:"The thought that apprehends its object by means of a generic image.", ex:"When we think of or remember an elephant, an image that is 'the opposite of a non-elephant' appears in the mind; though no elephant is present, the conceptual mind apprehends it through this generic image."},
+    "Generic image": {kind:"Epistemology", def:"The appearing object of a conceptual mind.", ex:"A generic image is like a reflection: looking in a mirror we don't see our face directly but its reflection, and through it we know our face; likewise the conceptual mind knows its object through the generic image, not by seeing it directly."},
+    "Apparent object": {kind:"Object-relation", def:"The object as it appears to the mind."},
+    "Observed object": {kind:"Object-relation", def:"The object the mind is directed at and investigates."},
+    "Connected object": {kind:"Object-relation", def:"The object the mind is held to / connected with."},
+    "Apprehended object": {kind:"Object-relation", def:"The object actually taken in by the mind."},
+    "Conceived object": {kind:"Object-relation", def:"The object as conceived or imagined by a conceptual mind."},
+    "Nonconceptual mind": {kind:"Epistemology", def:"The knower whose object appears clearly, unmixed with a generic image.", ex:"A dream visual perception that grasps a dream mountain as if real is nonconceptual — it apprehends its object clearly without a generic image (though it is really a mental perception, since there is no true seeing in sleep)."},
+    "Sense perception": {kind:"Epistemology", def:"A knower generated from a form sense power (eye, ear, nose, tongue or body).", ex:"The five sense perceptions are the 'perceptions of the five gates'; if one arises during single-pointed meditation it diverts attention like a thorn being driven in, disturbing concentration."},
+    "Mental perception": {kind:"Epistemology", def:"A knower generated from a mental power — the mentality that directly produces its particular aspect.", ex:"After the last moment of a visual perception of blue, we generate a direct mental perceiver of blue, then a conceptual thought 'this is blue'; a neutral mental perception is illustrated by the simple wish to have a drink or go for a walk."},
+
+    "Direct perceiver": {kind:"Knower 1 of 7", def:"A knower that apprehends its object correctly and directly.", ex:"The visual consciousness that sees blue, or the auditory consciousness that hears a sound, apprehending its object correctly and directly."},
+    "Subsequent cognizer": {kind:"Knower 2 of 7", def:"A fully reliable knower that understands its object in dependence on a conclusive reason.", ex:"Seeing smoke rise from a chimney and thereby knowing there is a fire inside without seeing it; or knowing that someone who entered a room with one door is still inside, because they never came out."},
+    "Re-cognizer": {kind:"Knower 3 of 7", def:"A knower that realizes what a previous valid knower has already realized.", ex:"Looking at a tree, the first moment of visual perception grasps it by its own power; the following moments, which continue that cognition through the power of the first, are re-cognizers."},
+    "Correct belief": {kind:"Knower 4 of 7", def:"A non-valid knower that realizes its conceived object.", ex:"Reflecting 'my body is impermanent because it will eventually die' yields a rough understanding of impermanence — a correct belief based on a correct reason, which can later mature into a subsequent cognizer."},
+    "Non-ascertaining perceiver": {kind:"Knower 5 of 7", def:"A knower that perceives its object clearly but does not ascertain it.", ex:"A newborn's visual perception of its father's face, or the mind with which a passer-by sees the unknown faces of a crowd on a busy street — perceiving clearly yet not ascertaining."},
+    "Non-deluded doubt": {kind:"Knower 6 of 7", def:"A doubt that does not disturb mental peace and produces good results.", ex:"The thought 'perhaps I should practise Dharma purely' — a doubt that does not disturb the mind and later transforms into the firm intention to practise."},
+    "Wrong awareness": {kind:"Knower 7 of 7", def:"A knower that is mistaken with respect to its connected object.", ex:"The mind that apprehends a rubber snake as a real one, or a coiled rope seen in dim light as a snake — mistaken with respect to its object."},
+    "Valid knower": {kind:"Validity", def:"A knower that is non-deceptive with respect to its connected object.", ex:"Even the valid knower that perceives a book opposes the wrong awareness that it is not a book; each valid knower counters a specific wrong awareness — e.g. realizing the body is impermanent counters grasping it as permanent."},
+    "Non-valid knower": {kind:"Validity", def:"A knower that is deceptive with respect to its connected object.", ex:"A deceptive awareness — like the moth that perceives a flame as an attractive dwelling and keeps approaching until it burns to death."},
+    "Manifest object": {kind:"Objects of a valid knower", def:"An object whose initial realization by a valid knower does not depend on logical reasoning.", ex:"The fire in a fireplace is a manifest object for those sitting in front of it (though hidden to those outside); visible forms and sounds are manifest objects."},
+    "Hidden object": {kind:"Objects of a valid knower", def:"An object whose initial realization by a valid knower depends on correct logical reasoning.", ex:"Subtle impermanence, emptiness and the laws of karma — known initially only through correct reasoning, as one infers 'there is fire because there is smoke', not by direct perception."},
+
+    "Meditation": {kind:"The path in practice", def:"A mind that focuses convergently on a virtuous object, whose function is to pacify and calm the mind.", ex:"Whether an object is virtuous depends on our attitude: when an enemy harms us, if we respond with patience he becomes a virtuous object (the object of our patience); if we get angry he becomes an object of hatred that harms us."},
+    "Initial being": {kind:"Level of meditation", def:"Meditations that turn the mind from this life toward future lives: precious human life, death, dangers of lower rebirth, refuge and karma.", ex:"Its teaching on lower rebirth is illustrated by a hunter reborn seven times as a cow on his in-laws' farm, each time slaughtered for meat; and by the villagers and fish of Lake Yamdroktso who keep trading places, life after life eating and killing one another."},
+    "Middling being": {kind:"Level of meditation", def:"Meditations that develop renunciation and the wish for liberation: renunciation, abandoning self-grasping, entering the path, and the ultimate truth of cessation.", ex:"Cutting down the poisonous tree of self-grasping is like sawing a tree: moral discipline is the body, concentration the hands, and wisdom the saw — only when the three higher trainings work together do the branches (other delusions) and fruit (sufferings) fall."},
+    "Superior being": {kind:"Level of meditation", def:"Meditations of the Mahayana: cherishing love, universal compassion, bodhichitta, the six perfections and training in yogic direct perceivers.", ex:"Just as a peacock can eat poisonous plants unharmed because of its karma, a Superior Bodhisattva, through direct realization of emptiness, is not harmed by the inner poison of the delusions."},
+    "Precious human life": {kind:"Initial-being meditation", def:"Contemplating the rare freedoms and endowments of a human rebirth and its great meaning.", ex:"Buddha's blind-turtle analogy: on an ocean as vast as the world floats a golden ring, and a blind turtle surfaces only once every hundred thousand years; the near-impossibility of its head slipping through the ring shows how rare it is to gain a human life and meet the Dharma."},
+    "Death": {kind:"Initial-being meditation", def:"Contemplating that death is certain, its time uncertain, and that only spiritual practice helps at death.", ex:"The deceptive daily thought 'I will not die today' must be replaced by 'I may die today'; at death the mind leaves the body like a bird leaving its nest, and because consciousness is not produced by the body (unlike a flame from a lamp's oil), it does not go out when the body dies."},
+    "Refuge": {kind:"Initial-being meditation", def:"Relying from the heart on Buddha, Dharma and Sangha for protection.", ex:"When threatened we turn to the police and when sick to doctors, yet neither frees us permanently from death or illness; our present freedom from lower rebirth is only temporary, like a prisoner let home for a week who must still return to jail."},
+    "Karma": {kind:"Initial-being meditation", def:"Contemplating that actions have results — virtue brings happiness, non-virtue brings suffering.", ex:"The mind is like a field and our actions are seeds sown in it; which seeds ripen at death depends on our state of mind then, just as falling asleep agitated brings nightmares."},
+    "Renunciation": {kind:"Middling-being meditation", def:"The determination to be free from samsara altogether.", ex:"Milarepa told the hunter Gompo Dorje, 'you have a human body but the mind of an animal'; living in samsara is like standing naked in a thornbush where every movement wounds us, and no wealth ever satisfies, for the more we have the more we want."},
+    "Cherishing love": {kind:"Superior-being meditation", def:"The mind that holds all sentient beings dear and important.", ex:"Just as the Buddhas shifted the object they cherished from themselves to all beings and thereby attained enlightenment, we should do likewise — we are only one person, while others are countless."},
+    "Universal compassion": {kind:"Superior-being meditation", def:"The wish that all beings be free from suffering and its causes.", ex:"Regarding all beings as our own mothers drowning in the ocean of samsara, we identify with them and feel their suffering as if it were our own."},
+    "Bodhichitta": {kind:"Superior-being meditation", def:"The supreme good heart — wishing to attain enlightenment for the benefit of all beings.", ex:"Bodhichitta is an inner vehicle with six wheels (the six perfections) that carries us to enlightenment; seeking real happiness within samsara is like the thief who ransacked Milarepa's empty cave at night, to whom he said, 'how do you expect to find anything here at night when I cannot find it by day?'"},
+    "Six perfections": {kind:"Superior-being meditation", def:"Giving, moral discipline, patience, effort, concentration and wisdom, practised to enlightenment.", ex:"Practising patience is like wearing supreme inner armour that shields us from harm; and having generated bodhichitta we must commit to the six perfections just as, on accepting a job, we commit to our employer's wishes or lose the post."}
+  };
+
+  const tip = document.getElementById('tip');
+  const elTerm = tip.querySelector('.tip__term');
+  const elKind = tip.querySelector('.tip__kind');
+  const elDef = tip.querySelector('.tip__def');
+  const elEx = tip.querySelector('.tip__ex');
+  tip.querySelector('.tip__close').addEventListener('click', function(){ tip.hidePopover(); });
+
+  function accentFor(btn){
+    const host = btn.closest('.group, .card, .panel, .band');
+    if(host){ const a = getComputedStyle(host).getPropertyValue('--accent'); if(a && a.trim()) return a.trim(); }
+    return getComputedStyle(document.documentElement).getPropertyValue('--lapis');
+  }
+  function position(btn){
+    const r = btn.getBoundingClientRect();
+    const tw = tip.offsetWidth, th = tip.offsetHeight, m = 10;
+    let left = Math.min(Math.max(m, r.left), Math.max(m, window.innerWidth - tw - m));
+    let top = r.bottom + 8;
+    if(top + th > window.innerHeight - m){ top = r.top - th - 8; }
+    top = Math.max(m, Math.min(top, window.innerHeight - th - m));
+    tip.style.left = left + 'px'; tip.style.top = top + 'px';
+  }
+  function openTip(btn){
+    const key = btn.dataset.term;
+    const d = TIPS[key] || {def:"No detail recorded for this term."};
+    elTerm.textContent = key;
+    elKind.textContent = d.kind || '';
+    elKind.style.display = d.kind ? '' : 'none';
+    elDef.innerHTML = d.def || '';
+    if(d.ex){ elEx.style.display=''; elEx.innerHTML = '<span class="tip__exlabel">Geshe-la’s example</span>' + d.ex; }
+    else { elEx.style.display='none'; }
+    tip.style.setProperty('--tip-accent', accentFor(btn));
+    if(tip.matches(':popover-open')) tip.hidePopover();
+    tip.showPopover();
+    position(btn);
+  }
+
+  document.querySelectorAll('button.t').forEach(function(btn){
+    const d = TIPS[btn.dataset.term];
+    if(d && d.ex){ btn.classList.add('has-ex'); }
+    btn.addEventListener('click', function(){ openTip(btn); });
+  });
+  window.addEventListener('resize', function(){ if(tip.matches(':popover-open')) tip.hidePopover(); });
+})();
+</script>
+
+</body></html>
