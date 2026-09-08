@@ -46,6 +46,28 @@ times over, each time announcing *desde el punto de vista de…* — from what p
 view. Rendering each as **the question it answers** ("What does it depend on?") replaced
 the invented metaphor with the author's own device, and was clearer than either.
 
+## A popover is looked up, so its first sentence must define
+
+A term note took three attempts because each draft explained the *mechanism* before
+saying what the word meant. The reader taps a word wanting a meaning; they did not ask
+for a procedure. The failing openings were **"Not a vaguer word for mind…"** — defining
+by what it is not — and **"Sort minds by what they depend on and you get awarenesses"**
+— an instruction, when what was needed was **"An awareness is a mind, named by what it
+depends on."**
+
+Two checks that would have caught it:
+
+- **First sentence is "X is …".** Every other popover on the page does this; the ones that
+  drift are the ones written as explanation rather than definition.
+- **Every "this", "that" or "both" has its referent inside the same note.** The second
+  draft said *"This is how one mind can be both"* — both *what*? Stripping the opener had
+  removed the contrast while leaving the payoff pointing at nothing. If a note is a
+  popover, it is read cold and alone; nothing outside it can be assumed.
+
+**The `kind` label is read alone too**, so it must be a noun phrase that stands by itself
+— *Secondary delusion*, *Synonym of primary mind*, *The general term for any mind* — never
+a fragment answering an unasked question, which is what *"By what a mind depends on"* was.
+
 ## Plain is not vague
 
 The tradition's own technical vocabulary — *primary mind*, *mental factor*,
