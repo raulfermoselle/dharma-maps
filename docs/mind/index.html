@@ -293,14 +293,14 @@
   @media (max-width: 520px){ .subcards { grid-template-columns: 1fr; } }
 
   .tbl-wrap { overflow-x: auto; margin-top: 4px; }
-  table.knowers { border-collapse: collapse; width: 100%; font-size: 11.5px; }
-  table.knowers th, table.knowers td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  table.knowers thead th { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; border-bottom: 1.5px solid var(--line-2); }
-  table.knowers td:first-child { white-space: nowrap; }
-  table.knowers .kn { font-weight: 600; color: var(--ink); }
-  table.knowers .kn .num { color: var(--saffron); font-weight: 700; margin-right: 5px; font-variant-numeric: tabular-nums; }
+  table.cognizers { border-collapse: collapse; width: 100%; font-size: 11.5px; }
+  table.cognizers th, table.cognizers td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.cognizers thead th { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-weight: 700; border-bottom: 1.5px solid var(--line-2); }
+  table.cognizers td:first-child { white-space: nowrap; }
+  table.cognizers .kn { font-weight: 600; color: var(--ink); }
+  table.cognizers .kn .num { color: var(--saffron); font-weight: 700; margin-right: 5px; font-variant-numeric: tabular-nums; }
   .badge { font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; padding: 1px 6px; border-radius: 5px; display: inline-block; white-space: nowrap; }
-  table.knowers td:last-child { white-space: nowrap; width: 1%; }
+  table.cognizers td:last-child { white-space: nowrap; width: 1%; }
   .badge--v { color: var(--jade); background: color-mix(in srgb, var(--jade) 15%, transparent); border: 1px solid color-mix(in srgb, var(--jade) 34%, transparent); }
   .badge--n { color: var(--madder); background: color-mix(in srgb, var(--madder) 14%, transparent); border: 1px solid color-mix(in srgb, var(--madder) 32%, transparent); }
   .valid-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
@@ -360,8 +360,8 @@
   .fruit b { font-weight: 700; }
   .fruit small { color: var(--ink-3); }
 
-  /* knower example sub-line */
-  table.knowers .ex { color: var(--ink-3); font-size: 10px; margin-top: 2px; line-height: 1.3; }
+  /* cognizer example sub-line */
+  table.cognizers .ex { color: var(--ink-3); font-size: 10px; margin-top: 2px; line-height: 1.3; }
 
   /* inline sub-axis under conceptual/sense cards */
   .axis { margin: 7px 0 0; padding: 0; list-style: none; }
@@ -480,7 +480,7 @@
       <span class="legend__item" style="--k:var(--saffron)"><span class="legend__dot"></span>Knowing / cognition</span>
       <span class="legend__item" style="--k:var(--jade)"><span class="legend__dot"></span>Virtue</span>
       <span class="legend__item" style="--k:var(--madder)"><span class="legend__dot"></span>Delusion</span>
-      <span class="legend__item" style="--k:var(--slate)"><span class="legend__dot"></span>Variable</span>
+      <span class="legend__item" style="--k:var(--slate)"><span class="legend__dot"></span>Changeable</span>
     </div>
   </header>
 
@@ -517,7 +517,7 @@
               <p class="label">Classified by function</p>
               <ul class="clean">
                 <li class="row"><span class="n">1</span><span><button class="t term" data-term="Primary minds">Primary minds</button> — apprehend the mere entity</span></li>
-                <li class="row"><span class="n">2</span><span><button class="t term" data-term="Mental factors">Mental factors</button> — apprehend specific characteristics</span></li>
+                <li class="row"><span class="n">2</span><span><button class="t term" data-term="Mental factors">Mental factors</button> — apprehend particular attributes</span></li>
               </ul>
               <p class="tiny" style="margin-top:8px">The engine of section&nbsp;B below.</p>
             </div>
@@ -527,7 +527,7 @@
             <div class="chiplist">
               <span class="chip"><b>mind</b></span>
               <span class="chip"><b>awareness</b></span>
-              <span class="chip"><b>knower</b></span>
+              <span class="chip"><b>cognizer</b></span>
               <span class="chip"><b>consciousness</b></span>
               <span class="chip"><b>mentality</b></span>
             </div>
@@ -550,20 +550,20 @@
       <div class="b-top">
         <div class="card" style="--accent:var(--lapis)">
           <p class="label"><button class="t" data-term="Primary mind">Primary mind</button></p>
-          <p class="def def--sm">“The knower that principally apprehends the <i>mere entity</i> of an object.”</p>
+          <p class="def def--sm">“The cognizer that principally apprehends the <i>mere entity</i> of an object.”</p>
           <p class="tiny" style="margin:8px 0 2px"><button class="t" data-term="Six consciousnesses">Six primary minds</button> (consciousnesses):</p>
           <div class="consciousness">
-            <span class="row"><span class="n">1</span>Visual (eye)</span>
-            <span class="row"><span class="n">2</span>Auditory (ear)</span>
-            <span class="row"><span class="n">3</span>Olfactory (nose)</span>
-            <span class="row"><span class="n">4</span>Gustatory (tongue)</span>
+            <span class="row"><span class="n">1</span>Eye</span>
+            <span class="row"><span class="n">2</span>Ear</span>
+            <span class="row"><span class="n">3</span>Nose</span>
+            <span class="row"><span class="n">4</span>Tongue</span>
             <span class="row"><span class="n">5</span>Body</span>
             <span class="row"><span class="n">6</span>Mental</span>
           </div>
         </div>
         <div class="card" style="--accent:var(--teal)">
           <p class="label"><button class="t" data-term="Mental factor">Mental factor</button></p>
-          <p class="def def--sm">“The knower that principally apprehends a <i>specific characteristic</i> of an object.”</p>
+          <p class="def def--sm">“The cognizer that principally apprehends a <i>particular attribute</i> of an object.”</p>
           <p class="flame-note">A primary mind is like <button class="t" data-term="Flame and its rays">a flame; its mental factors are like its rays</button> — one arising, one object, but different roles.</p>
         </div>
         <div class="card" style="--accent:var(--teal)">
@@ -578,11 +578,11 @@
 
       <div class="groups">
         <div class="group g-always">
-          <div class="group__head"><span class="group__count">5</span><button class="t group__name" data-term="Always-present">Always-present</button></div>
+          <div class="group__head"><span class="group__count">5</span><button class="t group__name" data-term="All-accompanying">All-accompanying</button></div>
           <p class="group__def">Minimum conditions present in <i>every</i> cognition.</p>
           <ol>
             <li><button class="t" data-term="Feeling">Feeling</button><span class="fn">experiences the object as pleasant / unpleasant / neutral · physical / mental · contaminated / uncontaminated</span></li>
-            <li><button class="t" data-term="Discernment">Discernment</button><span class="fn">apprehends the distinguishing characteristic · six, by consciousness · correct / erroneous · clear / confused</span></li>
+            <li><button class="t" data-term="Discrimination">Discrimination</button><span class="fn">apprehends the distinguishing characteristic · six, by consciousness · correct / erroneous · clear / confused</span></li>
             <li><button class="t" data-term="Intention">Intention</button><span class="fn">directs the primary mind to the object; creates karma · harmful / virtuous / neutral · meritorious / non-meritorious / non-fluctuating</span></li>
             <li><button class="t" data-term="Contact">Contact</button><span class="fn">contacts the object; basis of feeling · six, by consciousness</span></li>
             <li><button class="t" data-term="Attention">Attention</button><span class="fn">focuses on a particular feature · correct / incorrect · appropriate / inappropriate</span></li>
@@ -647,7 +647,7 @@
             <li><button class="t" data-term="Denial">Denial</button></li>
             <li><button class="t" data-term="Self-satisfaction">Self-satisfaction</button></li>
             <li><button class="t" data-term="Malice">Malice</button></li>
-            <li><button class="t" data-term="Non-shame">Non-shame</button></li>
+            <li><button class="t" data-term="Shamelessness">Shamelessness</button></li>
             <li><button class="t" data-term="Inconsideration">Inconsideration</button></li>
             <li><button class="t" data-term="Dullness">Dullness</button></li>
             <li><button class="t" data-term="Distraction">Distraction</button></li>
@@ -661,10 +661,10 @@
         </div>
 
         <div class="group g-var">
-          <div class="group__head"><span class="group__count">4</span><button class="t group__name" data-term="Variable">Variable</button></div>
+          <div class="group__head"><span class="group__count">4</span><button class="t group__name" data-term="Changeable">Changeable</button></div>
           <p class="group__def">Virtuous, non-virtuous or neutral depending on context.</p>
           <ol>
-            <li><button class="t" data-term="Sleep">Sleep</button><span class="fn">arises from dullness; absorbs the sense perceptions</span></li>
+            <li><button class="t" data-term="Sleep">Sleep</button><span class="fn">arises from dullness; absorbs the sense awarenesses</span></li>
             <li><button class="t" data-term="Regret">Regret</button><span class="fn">over actions done in the past</span></li>
             <li><button class="t" data-term="Investigation">Investigation</button><span class="fn">examines an object’s <i>gross</i> nature</span></li>
             <li><button class="t" data-term="Analysis">Analysis</button><span class="fn">examines an object’s <i>subtle</i> nature</span></li>
@@ -714,7 +714,7 @@
             <p class="def def--sm">Apprehends its object by means of a <button class="t" data-term="Generic image"><i>generic image</i></button> (the appearing object of a conceptual mind).</p>
             <p class="tiny" style="margin:9px 0 1px"><b>Five object-relations:</b></p>
             <ul class="axis axis--o">
-              <li><button class="t" data-term="Apparent object"><b>Apparent</b> object</button> — how it appears</li>
+              <li><button class="t" data-term="Appearing object"><b>Appearing</b> object</button> — how it appears</li>
               <li><button class="t" data-term="Observed object"><b>Observed</b> object</button> — what is looked at</li>
               <li><button class="t" data-term="Connected object"><b>Connected</b> object</button> — what it is held to</li>
               <li><button class="t" data-term="Apprehended object"><b>Apprehended</b> object</button> — what is taken in</li>
@@ -726,22 +726,22 @@
             <p class="label"><button class="t" data-term="Nonconceptual mind">Nonconceptual mind</button></p>
             <p class="def def--sm">Its object appears <i>clearly</i>, unmixed with a generic image.</p>
             <p class="tiny" style="margin:9px 0 1px"><b>Two main classes:</b></p>
-            <ul class="axis"><li>· sense perceptions</li><li>· nonconceptual mental perceptions</li></ul>
-            <p class="tiny" style="margin:8px 0 1px"><b>Three nonconceptual mental perceptions:</b></p>
-            <ul class="axis"><li>· direct mental perceivers</li><li>· yogic direct perceivers</li><li>· other nonconceptual mental perceptions</li></ul>
+            <ul class="axis"><li>· sense awarenesses</li><li>· nonconceptual mental awarenesses</li></ul>
+            <p class="tiny" style="margin:8px 0 1px"><b>Three nonconceptual mental awarenesses:</b></p>
+            <ul class="axis"><li>· direct mental perceivers</li><li>· yogic direct perceivers</li><li>· other nonconceptual mental awarenesses</li></ul>
             <p class="tiny" style="margin:8px 0 0">May also be correct or mistaken.</p>
           </div>
         </div>
 
-        <p class="label" style="color:var(--saffron);margin-top:16px">Sense vs mental perception</p>
+        <p class="label" style="color:var(--saffron);margin-top:16px">Sense vs mental awareness</p>
         <div class="subcards">
           <div class="card" style="--accent:var(--saffron)">
-            <p class="label"><button class="t" data-term="Sense perception">Sense perception</button></p>
-            <p class="tiny" style="margin:0">Generated from a <i>form sense power</i>. Five: visual · auditory · olfactory · gustatory · body.</p>
+            <p class="label"><button class="t" data-term="Sense awareness">Sense awareness</button></p>
+            <p class="tiny" style="margin:0">Generated from a <i>form sense power</i>. Five: eye · ear · nose · tongue · body.</p>
             <p class="tiny" style="margin:6px 0 0"><b>Dominant condition</b> — common / uncommon.</p>
           </div>
           <div class="card" style="--accent:var(--saffron)">
-            <p class="label"><button class="t" data-term="Mental perception">Mental perception</button></p>
+            <p class="label"><button class="t" data-term="Mental awareness">Mental awareness</button></p>
             <p class="tiny" style="margin:0">Generated from a <i>mental power</i> — the mentality that directly produces its particular aspect.</p>
             <p class="tiny" style="margin:6px 0 0">Conceptual / nonconceptual · virtuous / non-virtuous / neutral.</p>
           </div>
@@ -749,16 +749,16 @@
       </div>
 
       <div class="panel">
-        <p class="label" style="color:var(--saffron)">The seven categories of knower</p>
+        <p class="label" style="color:var(--saffron)">The seven categories of cognizer</p>
         <p class="tiny" style="margin:-2px 0 6px">Ordered toward becoming a Superior being via yogic direct perceivers.</p>
         <div class="tbl-wrap">
-          <table class="knowers">
-            <thead><tr><th>Knower</th><th>In one line &amp; subtypes</th><th>Valid?</th></tr></thead>
+          <table class="cognizers">
+            <thead><tr><th>Cognizer</th><th>In one line &amp; subtypes</th><th>Valid?</th></tr></thead>
             <tbody>
               <tr><td class="kn"><span class="num">1</span><button class="t" data-term="Direct perceiver">Direct perceiver</button></td><td>apprehends its object correctly &amp; directly<div class="ex">sensory · mental · yogic direct perceivers</div></td><td><span class="badge badge--v">valid</span></td></tr>
-              <tr><td class="kn"><span class="num">2</span><button class="t" data-term="Subsequent cognizer">Subsequent cognizer</button></td><td>fully reliable knower via a conclusive reason<div class="ex">based on facts / belief / convention</div></td><td><span class="badge badge--v">valid</span></td></tr>
-              <tr><td class="kn"><span class="num">3</span><button class="t" data-term="Re-cognizer">Re-cognizer</button></td><td>realises what a previous valid knower already realised<div class="ex">conceptual / nonconceptual</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
-              <tr><td class="kn"><span class="num">4</span><button class="t" data-term="Correct belief">Correct belief</button></td><td>non-valid knower that realises its conceived object<div class="ex">depending / not depending on a reason</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">2</span><button class="t" data-term="Subsequent cognizer">Subsequent cognizer</button></td><td>fully reliable cognizer via a conclusive reason<div class="ex">based on facts / belief / convention</div></td><td><span class="badge badge--v">valid</span></td></tr>
+              <tr><td class="kn"><span class="num">3</span><button class="t" data-term="Re-cognizer">Re-cognizer</button></td><td>realises what a previous valid cognizer already realised<div class="ex">conceptual / nonconceptual</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
+              <tr><td class="kn"><span class="num">4</span><button class="t" data-term="Correct belief">Correct belief</button></td><td>non-valid cognizer that realises its conceived object<div class="ex">depending / not depending on a reason</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
               <tr><td class="kn"><span class="num">5</span><button class="t" data-term="Non-ascertaining perceiver">Non-ascertaining perceiver</button></td><td>perceives its object clearly but does not ascertain it<div class="ex">sensory / mental</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
               <tr><td class="kn"><span class="num">6</span><button class="t" data-term="Non-deluded doubt">Non-deluded doubt</button></td><td>doubt that leans to truth &amp; yields good results<div class="ex">regarding ultimate truth / conventional truths</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
               <tr><td class="kn"><span class="num">7</span><button class="t" data-term="Wrong awareness">Wrong awareness</button></td><td>mistaken with respect to its connected object<div class="ex">conceptual / nonconceptual · 7 sensory errors: form, colour, activity, number, time, measure, entity</div></td><td><span class="badge badge--n">non-valid</span></td></tr>
@@ -768,14 +768,14 @@
 
         <div class="valid-row">
           <div class="card" style="--accent:var(--jade)">
-            <p class="label"><button class="t" data-term="Valid knower">Valid knower</button></p>
+            <p class="label"><button class="t" data-term="Valid cognizer">Valid cognizer</button></p>
             <p class="tiny" style="margin:0"><i>Non-deceptive</i> with respect to its connected object; knows a <button class="t" data-term="Manifest object"><b>manifest</b></button> or <button class="t" data-term="Hidden object"><b>hidden</b></button> object.</p>
             <ul class="axis"><li>· <b>direct</b> valid — sensory / mental / yogic</li><li>· <b>subsequent</b> valid — by facts / belief / convention</li></ul>
             <p class="tiny" style="margin:6px 0 0">“Valid” also names <b>valid teachers</b> &amp; <b>valid teachings</b>.</p>
           </div>
           <div class="card" style="--accent:var(--madder)">
-            <p class="label"><button class="t" data-term="Non-valid knower">Non-valid knower</button></p>
-            <p class="tiny" style="margin:0"><i>Deceptive</i> with respect to its object — conceptual or nonconceptual (knowers 3–7 above).</p>
+            <p class="label"><button class="t" data-term="Non-valid cognizer">Non-valid cognizer</button></p>
+            <p class="tiny" style="margin:0"><i>Deceptive</i> with respect to its object — conceptual or nonconceptual (cognizers 3–7 above).</p>
           </div>
         </div>
       </div>
@@ -928,22 +928,22 @@
   const TIPS = {
     "Mind": {kind:"The nature of mind", def:"That which is clarity and knowing — empty like space, always lacking form, shape and colour; its function is to perceive or know objects.", ex:"When we sleep and dream, the body lies as if dead while the mind separates from it and enters the dream world; this shows mind is entirely different from body, and that at death it leaves the body for the next life like a bird leaving one nest for another. On this contemplation alone, the existence of our future lives becomes clear."},
     "Gross mind": {kind:"Level of mind", def:"The coarsest, least stable level — the waking, sense-based minds.", ex:"In waking life, when the mind looks at the body or mind and thinks 'I' or 'mine', we mistake them for the self: when the body is sick we think 'I am sick', when it ages 'I am old'. This is a hallucination, and because of it we suffer without cease, life after life. Understanding this, we generate renunciation — the sincere wish to be free of it for ever by realising the emptiness of all phenomena."},
-    "Subtle mind": {kind:"Level of mind", def:"A more subtle and stable level, such as the minds of dreaming.", ex:"When we dream we use subtle minds — dream visual, auditory and other awarenesses — to experience dream objects. As Buddha said, 'know that all phenomena are like a dream.' Since the appearances of dreaming and of waking are alike mistaken, our ordinary activities in both have no real meaning; so we should ask what the real meaning of a human life is."},
+    "Subtle mind": {kind:"Level of mind", def:"A more subtle and stable level, such as the minds of dreaming.", ex:"When we dream we use subtle minds — dream eye, ear and other awarenesses — to experience dream objects. As Buddha said, 'know that all phenomena are like a dream.' Since the appearances of dreaming and of waking are alike mistaken, our ordinary activities in both have no real meaning; so we should ask what the real meaning of a human life is."},
     "Very subtle mind": {kind:"Level of mind", def:"The most subtle and stable mind, the continuously-abiding mind that manifests as clear light in deep sleep and at death.", ex:"Unlike the gross and subtle minds, which arise and vanish quickly like clouds, the very subtle mind sustains life continuously, day and night, life after life. When we attain enlightenment it becomes the mind of a Buddha, and our very subtle inner wind becomes a Buddha's body — which is why this continuously abiding mind is our Buddha nature."},
-    "Primary minds": {kind:"By function", def:"Knowers that principally apprehend the mere entity of an object. 'Primary mind', 'mentality' and 'consciousness' are synonyms.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its specific characteristics; the primary mind apprehends mainly the mere entity. Since an object has many characteristics but only one entity, many mental factors observe it while only one primary mind does."},
-    "Mental factors": {kind:"By function", def:"Knowers that principally apprehend a specific characteristic of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body. The Tibetan term, sem yhung, says it exactly: that which has arisen from the mind."},
-    "Primary mind": {kind:"Definition", def:"The knower that principally apprehends the mere entity of an object.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its specific characteristics; the primary mind apprehends mainly the mere entity. Since an object has many characteristics but only one entity, many mental factors observe it while only one primary mind does."},
-    "Mental factor": {kind:"Definition", def:"The knower that principally apprehends a specific characteristic of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body. The Tibetan term, sem yhung, says it exactly: that which has arisen from the mind."},
-    "Six consciousnesses": {kind:"Primary minds", def:"The six primary minds: visual, auditory, olfactory, gustatory, body and mental consciousness."},
+    "Primary minds": {kind:"By function", def:"Cognizers that principally apprehend the mere entity of an object. 'Primary mind', 'mentality' and 'consciousness' are synonyms.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its particular attributes; the primary mind apprehends mainly the mere entity. Since an object has many characteristics but only one entity, many mental factors observe it while only one primary mind does."},
+    "Mental factors": {kind:"By function", def:"Cognizers that principally apprehend a particular attribute of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body. The Tibetan term, sem yhung, says it exactly: that which has arisen from the mind."},
+    "Primary mind": {kind:"Definition", def:"The cognizer that principally apprehends the mere entity of an object.", ex:"With a glass, the glass itself is its mere entity while its base, walls, shape and colour are its particular attributes; the primary mind apprehends mainly the mere entity. Since an object has many characteristics but only one entity, many mental factors observe it while only one primary mind does."},
+    "Mental factor": {kind:"Definition", def:"The cognizer that principally apprehends a particular attribute of an object.", ex:"A mental factor is part of the primary mind but is not the primary mind itself — just as the hand is part of the body but is not the body. The Tibetan term, sem yhung, says it exactly: that which has arisen from the mind."},
+    "Six consciousnesses": {kind:"Primary minds", def:"The six primary minds: eye, ear, nose, tongue, body and mental consciousness."},
     "Flame and its rays": {kind:"Analogy", def:"The image for how a primary mind relates to its mental factors.", ex:"The primary mind is like a candle flame and its factors like the flame's rays: the rays spring from the flame and exist at the same time as it, and just as the flame illuminates with its rays, the primary mind knows its object with the help of its factors. Flame and rays are one thing, never found apart."},
-    "Five similarities": {kind:"Primary mind &amp; factors", def:"A primary mind and its factors always share five things: basis, object, aspect, time and substance.", ex:"When the gustatory consciousness tastes tea, the primary mind and its feeling share the same base, the same object, the same time and the same substance. This is why one primary mind can have only one feeling: we speak of having mixed feelings about something, but two manifest minds at once are impossible for an ordinary being."},
+    "Five similarities": {kind:"Primary mind &amp; factors", def:"A primary mind and its factors always share five things: basis, object, aspect, time and substance.", ex:"When the tongue consciousness tastes tea, the primary mind and its feeling share the same base, the same object, the same time and the same substance. This is why one primary mind can have only one feeling: we speak of having mixed feelings about something, but two manifest minds at once are impossible for an ordinary being."},
 
-    "Always-present": {kind:"Group 1 of 6", def:"The five factors present in every cognition: feeling, discernment, intention, contact and attention."},
-    "Feeling": {kind:"Always-present factor", def:"Experiences the object as pleasant, unpleasant or neutral.", ex:"Two people taste the same food and one finds it delicious, the other repugnant; the experience depends on one's own ripening karma, not on the object. Contaminated feelings are then the base of the three poisons — pleasant ones stir attachment, unpleasant ones hatred, neutral ones ignorance. As Shantideva says, from feeling arises craving."},
-    "Discernment": {kind:"Always-present factor", def:"Apprehends the distinguishing characteristic of an object.", ex:"Looking at someone called Juan, one person identifies an enemy and another a friend; since 'friend' and 'enemy' are merely imputed by different minds, what Juan is depends on how the apprehending mind labels him. We can choose how we identify what we meet — and a practitioner should choose only in ways that encourage virtue."},
-    "Intention": {kind:"Always-present factor", def:"Focuses the primary mind on its object; the factor that creates karma.", ex:"If a tree falls and kills a person it accumulates no karma of killing, because it lacks the mental factor of intention. Since what we experience follows the nature of our actions, and our actions follow the intention behind them, our happiness and suffering rest on this one factor. However learned someone is, if their intentions are bad their knowledge is worth little."},
-    "Contact": {kind:"Always-present factor", def:"Perceives its object as pleasant, unpleasant or neutral; the basis of feeling.", ex:"In the first moment the gustatory consciousness tastes tea, if the accompanying contact perceives it as agreeable, a pleasant feeling immediately follows. Contact does not merely register that things are pleasant, unpleasant or neutral — it is what produces the feeling that comes next."},
-    "Attention": {kind:"Always-present factor", def:"Focuses the mind on a particular feature of the object.", ex:"Intention is like a horse travelling a road and attention like the reins that steer it: intention moves the mind toward the object, attention focuses it on a specific characteristic. If attention does not settle the mind on an object and hold it there, neither mindfulness nor concentration can arise at all."},
+    "All-accompanying": {kind:"Group 1 of 6", def:"The five factors present in every cognition: feeling, discrimination, intention, contact and attention."},
+    "Feeling": {kind:"All-accompanying factor", def:"Experiences the object as pleasant, unpleasant or neutral.", ex:"Two people taste the same food and one finds it delicious, the other repugnant; the experience depends on one's own ripening karma, not on the object. Contaminated feelings are then the base of the three poisons — pleasant ones stir attachment, unpleasant ones hatred, neutral ones ignorance. As Shantideva says, from feeling arises craving."},
+    "Discrimination": {kind:"All-accompanying factor", def:"Apprehends the distinguishing characteristic of an object.", ex:"Looking at someone called Juan, one person identifies an enemy and another a friend; since 'friend' and 'enemy' are merely imputed by different minds, what Juan is depends on how the apprehending mind labels him. We can choose how we identify what we meet — and a practitioner should choose only in ways that encourage virtue."},
+    "Intention": {kind:"All-accompanying factor", def:"Focuses the primary mind on its object; the factor that creates karma.", ex:"If a tree falls and kills a person it accumulates no karma of killing, because it lacks the mental factor of intention. Since what we experience follows the nature of our actions, and our actions follow the intention behind them, our happiness and suffering rest on this one factor. However learned someone is, if their intentions are bad their knowledge is worth little."},
+    "Contact": {kind:"All-accompanying factor", def:"Perceives its object as pleasant, unpleasant or neutral; the basis of feeling.", ex:"In the first moment the tongue consciousness tastes tea, if the accompanying contact perceives it as agreeable, a pleasant feeling immediately follows. Contact does not merely register that things are pleasant, unpleasant or neutral — it is what produces the feeling that comes next."},
+    "Attention": {kind:"All-accompanying factor", def:"Focuses the mind on a particular feature of the object.", ex:"Intention is like a horse travelling a road and attention like the reins that steer it: intention moves the mind toward the object, attention focuses it on a particular attribute. If attention does not settle the mind on an object and hold it there, neither mindfulness nor concentration can arise at all."},
 
     "Object-ascertaining": {kind:"Group 2 of 6", def:"Five factors that ascertain their object: aspiration, firm apprehension, mindfulness, concentration and wisdom."},
     "Aspiration": {kind:"Object-ascertaining factor", def:"Focuses on a desired object and takes interest in it.", ex:"We are reading this book only because we first generated the wish to; yet some criminals are very clever, and because their aspirations are wrong their cleverness lands them in prison. Whatever our aspiration is, our life follows it — and with no aspiration we do nothing at all. So the work is to cultivate the right ones."},
@@ -967,7 +967,7 @@
     "Equanimity": {kind:"Virtuous factor", def:"Keeps the primary mind free from mental sinking and excitement.", ex:"Equanimity keeps the mind level, free of sinking and excitement — the two chief obstacles to concentration. Up to the eighth mental placement it takes effort to maintain; after that the two obstacles are gone and equanimity arises spontaneously, as effortlessly as falling asleep."},
     "Non-harmfulness": {kind:"Virtuous factor", def:"Wishes that sentient beings do not suffer (compassion).", ex:"Compassion and the wish to harm are like water and fire, utterly incompatible. Abstaining from harming others is among the most important of all Buddhist practices — apply it continuously and we are practising Dharma at every moment, even when we cannot sit down to meditate."},
 
-    "Virtue": {kind:"Moral valuation", def:"The phenomenon that is the main cause of happiness (five kinds: natural, by association, by motivation, by subsequent relation, ultimate).", ex:"In prostrating out of faith: the faith is natural virtue; the accompanying feeling and discernment are virtue by association; the physical act is virtue by motivation; and the imprints left on the mind are virtue by subsequent relation. One simple act, and every part of the mind takes its colour."},
+    "Virtue": {kind:"Moral valuation", def:"The phenomenon that is the main cause of happiness (five kinds: natural, by association, by motivation, by subsequent relation, ultimate).", ex:"In prostrating out of faith: the faith is natural virtue; the accompanying feeling and discrimination are virtue by association; the physical act is virtue by motivation; and the imprints left on the mind are virtue by subsequent relation. One simple act, and every part of the mind takes its colour."},
     "Non-virtue": {kind:"Moral valuation", def:"The phenomenon that is the main cause of suffering (five kinds).", ex:"In killing a mosquito out of hatred: the hatred is non-virtue by nature; the accompanying factors are non-virtue by association; the act itself is non-virtue by motivation; and the imprints left on the mind are non-virtue by subsequent relation. The act ends in a moment; the imprint does not."},
     "Delusion": {kind:"Psychopathology", def:"A mental factor arising from inappropriate attention whose function is to disturb the mind and rob it of control.", ex:"When hatred, jealousy or attachment arise they shatter our peace like a storm breaks a calm sea. Geshe Ben Gungyel said his only practice was to drive the spear of the opponents into the head of each delusion the moment it showed its ugly face — then they left him alone, and he was happy."},
     "Six causes of delusion": {kind:"Delusion", def:"Seed, object, inappropriate attention, familiarity, distraction &amp; bad influence, and bad habits.", ex:"Two friends in Pembo: the well-behaved one moved to Lhasa, worked in a tavern and became a drunkard; the ill-behaved one became a great Geshe's attendant, gave up drink and became a pure practitioner. Their characters reversed entirely, and nothing did it but the company they kept."},
@@ -992,7 +992,7 @@
     "Denial": {kind:"Secondary delusion", def:"Does not wish to purify the harmful actions or moral downfalls we have committed."},
     "Self-satisfaction": {kind:"Secondary delusion", def:"Preoccupied with our own beauty, wealth or good qualities, takes no interest in spiritual development.", ex:"Some believe they need observe no morality and may do as they please because they belong to a supposedly superior race or class. Position, beauty and power are all temporary, so complacency about them always ends in disappointment — and worse, it hides our own faults from us, so we never even wish to remove them."},
     "Malice": {kind:"Secondary delusion", def:"Wishes that other sentient beings suffer."},
-    "Non-shame": {kind:"Secondary delusion", def:"The opposite of the sense of shame."},
+    "Shamelessness": {kind:"Secondary delusion", def:"The opposite of the sense of shame."},
     "Inconsideration": {kind:"Secondary delusion", def:"The opposite of consideration for others."},
     "Dullness": {kind:"Secondary delusion", def:"Produces physical and mental rigidity and heaviness.", ex:"Dullness is like darkness enveloping the mind so its object blurs, as when fog rolls in or night falls; Dharma teachings then seem unclear, though it is really our own mind that is clouded. If we fall asleep while meditating, dullness came first and we did not notice."},
     "Distraction": {kind:"Secondary delusion", def:"Wanders after any object of the delusions.", ex:"Distraction makes the mind wander after contaminated objects — samsaric places, bodies or pleasures — so we cannot concentrate on spiritual practice. Its object may be one of hatred, of attachment or of ignorance. Of all the obstacles to spiritual growth, this is the worst."},
@@ -1003,34 +1003,34 @@
     "Forgetfulness": {kind:"Secondary delusion", def:"Makes us forget virtuous objects."},
     "Non-alertness": {kind:"Secondary delusion", def:"Makes us incur faults by being unable to tell what is a fault from what is not."},
 
-    "Variable": {kind:"Group 6 of 6", def:"Four factors — sleep, regret, investigation, analysis — that are virtuous, non-virtuous or neutral according to context."},
-    "Sleep": {kind:"Variable factor", def:"Arises from dullness or its imprints; absorbs the sense perceptions.", ex:"Skilled practitioners use sleeping, dreaming and waking to understand death: falling asleep is like dying, dreaming is like the intermediate state, and waking is like being reborn. Every night rehearses what we most need to understand — though if we grow attached to sleep, laziness simply increases."},
-    "Regret": {kind:"Variable factor", def:"Regrets actions done in the past.", ex:"Virtuous: regretting past harmful acts. Pointless: someone born blind for a past harm gains nothing by regret now. Harmful: taking precepts in the morning then regretting them by afternoon. Neutral: regretting food that caused indigestion. Where the effects have already ripened, regret only makes us feel worse — better to accept them patiently and stop creating more."},
-    "Investigation": {kind:"Variable factor", def:"Examines an object to understand its gross nature.", ex:"Looking for our car and finding it, we stop enquiring and never ask 'what exactly is the car?'; only those who analyse philosophically examine things that way — asking whether the body is one of its parts or the collection of them. To recognise that the body cannot be found under analysis is a great step toward understanding emptiness."},
-    "Analysis": {kind:"Variable factor", def:"Examines an object to understand its subtle nature.", ex:"Having grasped something roughly through investigation, we sharpen wisdom by examining it in detail. At first only a coarse mental image appears; but alternating analytical and placement meditation, the object grows clearer until the generic image falls away entirely and the mind becomes a direct yogic perceiver of it."},
+    "Changeable": {kind:"Group 6 of 6", def:"Four factors — sleep, regret, investigation, analysis — that are virtuous, non-virtuous or neutral according to context."},
+    "Sleep": {kind:"Changeable factor", def:"Arises from dullness or its imprints; absorbs the sense awarenesses.", ex:"Skilled practitioners use sleeping, dreaming and waking to understand death: falling asleep is like dying, dreaming is like the intermediate state, and waking is like being reborn. Every night rehearses what we most need to understand — though if we grow attached to sleep, laziness simply increases."},
+    "Regret": {kind:"Changeable factor", def:"Regrets actions done in the past.", ex:"Virtuous: regretting past harmful acts. Pointless: someone born blind for a past harm gains nothing by regret now. Harmful: taking precepts in the morning then regretting them by afternoon. Neutral: regretting food that caused indigestion. Where the effects have already ripened, regret only makes us feel worse — better to accept them patiently and stop creating more."},
+    "Investigation": {kind:"Changeable factor", def:"Examines an object to understand its gross nature.", ex:"Looking for our car and finding it, we stop enquiring and never ask 'what exactly is the car?'; only those who analyse philosophically examine things that way — asking whether the body is one of its parts or the collection of them. To recognise that the body cannot be found under analysis is a great step toward understanding emptiness."},
+    "Analysis": {kind:"Changeable factor", def:"Examines an object to understand its subtle nature.", ex:"Having grasped something roughly through investigation, we sharpen wisdom by examining it in detail. At first only a coarse mental image appears; but alternating analytical and placement meditation, the object grows clearer until the generic image falls away entirely and the mind becomes a direct yogic perceiver of it."},
 
     "Conceptual mind": {kind:"Epistemology", def:"The thought that apprehends its object by means of a generic image.", ex:"When we think of or remember an elephant, an image that is 'the opposite of a non-elephant' appears in the mind; though no elephant is present, the conceptual mind apprehends it through this generic image. Everything we think about, rather than see, we meet this way."},
     "Generic image": {kind:"Epistemology", def:"The appearing object of a conceptual mind.", ex:"A generic image is like a reflection: looking in a mirror we don't see our face directly but its reflection, and through it we know our face; likewise the conceptual mind knows its object through the generic image, not by seeing it directly. Useful, and never the thing itself."},
-    "Apparent object": {kind:"Object-relation", def:"The object as it appears to the mind."},
+    "Appearing object": {kind:"Object-relation", def:"The object as it appears to the mind."},
     "Observed object": {kind:"Object-relation", def:"The object the mind is directed at and investigates."},
     "Connected object": {kind:"Object-relation", def:"The object the mind is held to / connected with."},
     "Apprehended object": {kind:"Object-relation", def:"The object actually taken in by the mind."},
     "Conceived object": {kind:"Object-relation", def:"The object as conceived or imagined by a conceptual mind."},
-    "Nonconceptual mind": {kind:"Epistemology", def:"The knower whose object appears clearly, unmixed with a generic image.", ex:"A dream visual perception that grasps a dream mountain as if real is nonconceptual — it apprehends its object clearly without a generic image. For now the only nonconceptual minds we can actually use are the sense ones; the mental kind is beyond us in daily life, which is much of why we see so little as it is."},
-    "Sense perception": {kind:"Epistemology", def:"A knower generated from a form sense power (eye, ear, nose, tongue or body).", ex:"The five sense perceptions are the 'perceptions of the five gates'; if one arises during single-pointed meditation it diverts attention like a thorn being driven in. They are how we read and hear the teachings, and they are also what breaks our concentration — the same doors, serving both ways."},
-    "Mental perception": {kind:"Epistemology", def:"A knower generated from a mental power — the mentality that directly produces its particular aspect.", ex:"After the last moment of a visual perception of blue, we generate a direct mental perceiver of blue, then a conceptual thought 'this is blue'. The whole sequence passes in less time than we can notice, which is why we take the last step for the first and believe we simply saw it."},
+    "Nonconceptual mind": {kind:"Epistemology", def:"The cognizer whose object appears clearly, unmixed with a generic image.", ex:"A dream eye awareness that grasps a dream mountain as if real is nonconceptual — it apprehends its object clearly without a generic image. For now the only nonconceptual minds we can actually use are the sense ones; the mental kind is beyond us in daily life, which is much of why we see so little as it is."},
+    "Sense awareness": {kind:"Epistemology", def:"A cognizer generated from a form sense power (eye, ear, nose, tongue or body).", ex:"The five sense awarenesses are the 'awarenesses of the five gates'; if one arises during single-pointed meditation it diverts attention like a thorn being driven in. They are how we read and hear the teachings, and they are also what breaks our concentration — the same doors, serving both ways."},
+    "Mental awareness": {kind:"Epistemology", def:"A cognizer generated from a mental power — the mentality that directly produces its particular aspect.", ex:"After the last moment of an eye awareness of blue, we generate a direct mental perceiver of blue, then a conceptual thought 'this is blue'. The whole sequence passes in less time than we can notice, which is why we take the last step for the first and believe we simply saw it."},
 
-    "Direct perceiver": {kind:"Knower 1 of 7", def:"A knower that apprehends its object correctly and directly.", ex:"The visual consciousness that sees blue, or the auditory consciousness that hears a sound, apprehending its object correctly and directly. Every sense and mental perception that takes its object correctly and without an image between is one of these."},
-    "Subsequent cognizer": {kind:"Knower 2 of 7", def:"A fully reliable knower that understands its object in dependence on a conclusive reason.", ex:"Seeing smoke rise from a chimney and thereby knowing there is a fire inside without seeing it. Manifest things can be known directly; hidden ones like impermanence and emptiness can be reached at first only by a conclusive reason. Almost everything worth realising begins as something inferred."},
-    "Re-cognizer": {kind:"Knower 3 of 7", def:"A knower that realizes what a previous valid knower has already realized.", ex:"Looking at a tree, the first moment of visual perception grasps it by its own power; the following moments, which continue that cognition through the power of the first, are re-cognizers. The first moment carries the mind from correct belief to realization; the rest only keep it there."},
-    "Correct belief": {kind:"Knower 4 of 7", def:"A non-valid knower that realizes its conceived object.", ex:"Reflecting 'my body is impermanent because it will eventually die' yields a rough understanding of impermanence — a correct belief based on a correct reason. It is not yet realization, but it is the ground realization grows from, and it can ripen into a subsequent cognizer."},
-    "Non-ascertaining perceiver": {kind:"Knower 5 of 7", def:"A knower that perceives its object clearly but does not ascertain it.", ex:"A newborn's visual perception of its father's face, or the mind with which a passer-by sees the unknown faces of a crowd — perceiving clearly yet not ascertaining. These are always present in our minds, even in single-pointed meditation; only Buddhas have removed them entirely."},
-    "Non-deluded doubt": {kind:"Knower 6 of 7", def:"A doubt that does not disturb mental peace and produces good results.", ex:"The thought 'perhaps I should practise Dharma purely' — a doubt that does not disturb the mind and later transforms into the firm intention to practise. Such doubts have to be generated first; they lead us, little by little, to correct belief."},
-    "Wrong awareness": {kind:"Knower 7 of 7", def:"A knower that is mistaken with respect to its connected object.", ex:"The mind that apprehends a rubber snake as a real one, or a coiled rope seen in dim light as a snake. Every mind of an ordinary being is mistaken, since all of them perceive things as truly existent — but not every mistaken mind is a wrong awareness."},
-    "Valid knower": {kind:"Validity", def:"A knower that is non-deceptive with respect to its connected object.", ex:"Even the valid knower that perceives a book opposes the wrong awareness that it is not a book; each one counters a specific wrong awareness. While a valid knower is manifest, the wrong awareness opposing it simply cannot arise — which is why Je Tsongkhapa said to test our meditation on emptiness by watching whether self-grasping has weakened."},
-    "Non-valid knower": {kind:"Validity", def:"A knower that is deceptive with respect to its connected object.", ex:"A deceptive awareness — like the moth that perceives a flame as an attractive dwelling and keeps approaching until it burns to death. They are called deceptive because they are not perfect knowledge, and so cannot be relied upon."},
-    "Manifest object": {kind:"Objects of a valid knower", def:"An object whose initial realization by a valid knower does not depend on logical reasoning.", ex:"The fire in a fireplace is a manifest object for those sitting in front of it, though hidden to those outside. The classification is relative, not fixed: hell beings are a very hidden object to us, and a manifest one among themselves."},
-    "Hidden object": {kind:"Objects of a valid knower", def:"An object whose initial realization by a valid knower depends on correct logical reasoning.", ex:"Subtle impermanence, emptiness and the laws of karma — known initially only through correct reasoning, as one infers 'there is fire because there is smoke'. The very hidden, like the precise workings of karma, only a Buddha perceives directly."},
+    "Direct perceiver": {kind:"Cognizer 1 of 7", def:"A cognizer that apprehends its object correctly and directly.", ex:"The eye consciousness that sees blue, or the ear consciousness that hears a sound, apprehending its object correctly and directly. Every sense and mental awareness that takes its object correctly and without an image between is one of these."},
+    "Subsequent cognizer": {kind:"Cognizer 2 of 7", def:"A fully reliable cognizer that understands its object in dependence on a conclusive reason.", ex:"Seeing smoke rise from a chimney and thereby knowing there is a fire inside without seeing it. Manifest things can be known directly; hidden ones like impermanence and emptiness can be reached at first only by a conclusive reason. Almost everything worth realising begins as something inferred."},
+    "Re-cognizer": {kind:"Cognizer 3 of 7", def:"A cognizer that realizes what a previous valid cognizer has already realized.", ex:"Looking at a tree, the first moment of eye awareness grasps it by its own power; the following moments, which continue that cognition through the power of the first, are re-cognizers. The first moment carries the mind from correct belief to realization; the rest only keep it there."},
+    "Correct belief": {kind:"Cognizer 4 of 7", def:"A non-valid cognizer that realizes its conceived object.", ex:"Reflecting 'my body is impermanent because it will eventually die' yields a rough understanding of impermanence — a correct belief based on a correct reason. It is not yet realization, but it is the ground realization grows from, and it can ripen into a subsequent cognizer."},
+    "Non-ascertaining perceiver": {kind:"Cognizer 5 of 7", def:"A cognizer that perceives its object clearly but does not ascertain it.", ex:"A newborn's eye awareness of its father's face, or the mind with which a passer-by sees the unknown faces of a crowd — perceiving clearly yet not ascertaining. These are always present in our minds, even in single-pointed meditation; only Buddhas have removed them entirely."},
+    "Non-deluded doubt": {kind:"Cognizer 6 of 7", def:"A doubt that does not disturb mental peace and produces good results.", ex:"The thought 'perhaps I should practise Dharma purely' — a doubt that does not disturb the mind and later transforms into the firm intention to practise. Such doubts have to be generated first; they lead us, little by little, to correct belief."},
+    "Wrong awareness": {kind:"Cognizer 7 of 7", def:"A cognizer that is mistaken with respect to its connected object.", ex:"The mind that apprehends a rubber snake as a real one, or a coiled rope seen in dim light as a snake. Every mind of an ordinary being is mistaken, since all of them perceive things as truly existent — but not every mistaken mind is a wrong awareness."},
+    "Valid cognizer": {kind:"Validity", def:"A cognizer that is non-deceptive with respect to its connected object.", ex:"Even the valid cognizer that perceives a book opposes the wrong awareness that it is not a book; each one counters a specific wrong awareness. While a valid cognizer is manifest, the wrong awareness opposing it simply cannot arise — which is why Je Tsongkhapa said to test our meditation on emptiness by watching whether self-grasping has weakened."},
+    "Non-valid cognizer": {kind:"Validity", def:"A cognizer that is deceptive with respect to its connected object.", ex:"A deceptive awareness — like the moth that perceives a flame as an attractive dwelling and keeps approaching until it burns to death. They are called deceptive because they are not perfect knowledge, and so cannot be relied upon."},
+    "Manifest object": {kind:"Objects of a valid cognizer", def:"An object whose initial realization by a valid cognizer does not depend on logical reasoning.", ex:"The fire in a fireplace is a manifest object for those sitting in front of it, though hidden to those outside. The classification is relative, not fixed: hell beings are a very hidden object to us, and a manifest one among themselves."},
+    "Hidden object": {kind:"Objects of a valid cognizer", def:"An object whose initial realization by a valid cognizer depends on correct logical reasoning.", ex:"Subtle impermanence, emptiness and the laws of karma — known initially only through correct reasoning, as one infers 'there is fire because there is smoke'. The very hidden, like the precise workings of karma, only a Buddha perceives directly."},
 
     "Meditation": {kind:"The path in practice", def:"A mind that focuses convergently on a virtuous object, whose function is to pacify and calm the mind.", ex:"Whether an object is virtuous depends on our attitude: when an enemy harms us, if we respond with patience he becomes the object of our patience; if we get angry he becomes an object of hatred. Each time we meditate we create the cause to enjoy inner peace later — and inner peace, not outer conditions, is what happiness actually rests on."},
     "Initial being": {kind:"Level of meditation", def:"Meditations that turn the mind from this life toward future lives: precious human life, death, dangers of lower rebirth, refuge and karma.", ex:"Its teaching on lower rebirth is illustrated by a hunter reborn seven times as a cow on his in-laws' farm, each time slaughtered for meat; and by the villagers and fish of Lake Yamdroktso who keep trading places, life after life eating and killing one another. Nothing about the arrangement is stable except that it continues."},

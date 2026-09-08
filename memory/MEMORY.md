@@ -3,6 +3,7 @@
 - [Only docs/ is published](only-docs-is-published.md) — Pages serves the `/docs` folder only; everything else 404s. Publication is opt-in by structure, not a denylist.
 - [What ships without asking](what-ships-without-asking.md) — fixes to existing pages ship; a new map, the copyright posture and credentials wait; a published slug is a promise.
 - [Write plainly for the reader](write-plainly-for-the-reader.md) — cut your jargon, keep the tradition's exact; "entity-relationship model", "structural maps" and "bands" are on record as rejected.
+- [Terms follow the official glossary](terms-follow-the-official-glossary.md) — the source is Spanish, so back-translation is the default failure; the glossary is blocked here, WebSearch is the route.
 - [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.
 - [Theme colours in three blocks](theme-colours-in-three-blocks.md) — full light palette on bare `:root`, then a guarded `prefers-color-scheme` block, then `[data-theme="dark"]`; reuse the house palette.
 - [Phone first, and measure the render](phone-first-and-measure-the-render.md) — 390px target; the preview sequence that works, two viewport tools that lie, the query that settles overflow.
