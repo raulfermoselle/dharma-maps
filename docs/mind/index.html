@@ -634,12 +634,12 @@
           <p class="label"><button class="t" data-term="Mental factor">Mental factor</button></p>
           <p class="tiny" style="margin:8px 0 2px">Fifty-one of them, in <b>six groups</b>:</p>
           <div class="consciousness">
-            <span class="row"><span class="n">5</span>All-accompanying</span>
-            <span class="row"><span class="n">5</span>Object-ascertaining</span>
-            <span class="row"><span class="n">11</span>Virtuous</span>
-            <span class="row"><span class="n">6</span>Root delusions</span>
-            <span class="row"><span class="n">20</span>Secondary delusions</span>
-            <span class="row"><span class="n">4</span>Changeable</span>
+            <span class="row"><span class="n">5</span><button class="t" data-term="All-accompanying" data-goto="1">All-accompanying</button></span>
+            <span class="row"><span class="n">5</span><button class="t" data-term="Object-ascertaining" data-goto="1">Object-ascertaining</button></span>
+            <span class="row"><span class="n">11</span><button class="t" data-term="Virtuous" data-goto="1">Virtuous</button></span>
+            <span class="row"><span class="n">6</span><button class="t" data-term="Root delusions" data-goto="1">Root delusions</button></span>
+            <span class="row"><span class="n">20</span><button class="t" data-term="Secondary delusions" data-goto="1">Secondary delusions</button></span>
+            <span class="row"><span class="n">4</span><button class="t" data-term="Changeable" data-goto="1">Changeable</button></span>
           </div>
           <p class="tiny" style="margin-top:8px">Each group is set out below ↓</p>
         </div>
@@ -1187,16 +1187,25 @@
     }
     position(at);
     markOpen(key);
-    const shown = reveal();
+    const shown = reveal(btn);
     if(shown){ anchor = shown; position(shown); }
   }
 
   /* Bring the lit element on screen, so the highlight is something you can actually see.
      Picks whichever occurrence is nearest the current view, and leaves it alone if it is
      already comfortably above where the note will sit. */
-  function reveal(){
+  function reveal(from){
     const lit = Array.prototype.slice.call(document.querySelectorAll('button.t.is-open'));
     if(!lit.length) return null;
+    /* A summary row asks to be taken to where its term is actually treated, so it prefers
+       an occurrence other than itself. Everything else shows the note where you are. */
+    if(from && from.dataset && from.dataset.goto){
+      const elsewhere = lit.filter(function(b){ return b !== from; });
+      if(elsewhere.length){
+        elsewhere[0].scrollIntoView({block:'center'});
+        return elsewhere[0];
+      }
+    }
     const mid = window.innerHeight / 2;
     lit.sort(function(a, b){
       return Math.abs(a.getBoundingClientRect().top - mid) - Math.abs(b.getBoundingClientRect().top - mid);
