@@ -1,5 +1,6 @@
 - [Memory lives in this repo](memory-lives-in-this-repo.md) — auto-memory is a link into `memory/`, made by a linker that computes the machine path; only what is pushed is durable.
 - [The copyright posture is fixed](copyright-posture-is-fixed.md) — why no source material, why `noindex` everywhere, why the takedown offer must be real, why there is deliberately no LICENSE.
+- [Only docs/ is published](only-docs-is-published.md) — Pages serves the `/docs` folder only; everything else 404s. Publication is opt-in by structure, not a denylist.
 - [What ships without asking](what-ships-without-asking.md) — fixes to existing pages ship; a new map, the copyright posture and credentials wait; a published slug is a promise.
 - [Write plainly for the reader](write-plainly-for-the-reader.md) — cut your jargon, keep the tradition's exact; "entity-relationship model", "structural maps" and "bands" are on record as rejected.
 - [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.

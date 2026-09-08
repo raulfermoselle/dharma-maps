@@ -2,11 +2,19 @@
 
 A **map** is one self-contained HTML page laying out the shape of a teaching: what its
 parts are, how they relate, what each term means. It is a reader's aid, never a source.
-One map per directory, at `<slug>/index.html`. `README.md` is the public face.
+One map per directory, at `docs/<slug>/index.html`. `README.md` is the public face.
 
 Published through GitHub Pages, and nowhere else. Do not republish a map on another
 host, in another format, or as a hosted artifact — a shared link should have exactly one
 place it can point.
+
+**`docs/` is the entire published site, and nothing outside it is served.** GitHub Pages
+publishes from this repo's `/docs` folder, so `docs/` is the site root —
+`docs/mind/index.html` is served as `/mind/`. Everything else in the repo, this file and
+`memory/` included, returns 404 on the live site. That is deliberate: publication is
+opt-in, so a new note, script or memory is unpublished automatically rather than
+depending on someone remembering to exclude it. Put a file in `docs/` only if the world
+should be able to read it. See `memory/only-docs-is-published.md`.
 
 ## Your memory lives in this repo
 

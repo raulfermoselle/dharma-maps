@@ -12,7 +12,7 @@ straight from disk and they work.
 
 | Map | Subject | Source |
 |---|---|---|
-| [The Mind & Its 51 Mental Factors](mind/) | What mind is, how it is built, how it knows, how it is transformed | Geshe Kelsang Gyatso, *How to Understand the Mind* (Tharpa Publications) |
+| [The Mind & Its 51 Mental Factors](docs/mind/) | What mind is, how it is built, how it knows, how it is transformed | Geshe Kelsang Gyatso, *How to Understand the Mind* (Tharpa Publications) |
 
 ## What these are, and what they are not
 
@@ -49,7 +49,9 @@ rule is that they never come near this directory in the first place.
 
 1. Write the page as one self-contained `.html` file — inline the CSS and JS, embed any
    images as data URIs. No CDNs, so nothing rots.
-2. Put it at `<slug>/index.html` so its URL is stable and clean.
+2. Put it at `docs/<slug>/index.html` so its URL is stable and clean. **`docs/` is the
+   published site** — it is the site root, so that file is served as `/<slug>/`. Anything
+   outside `docs/` is part of the repository but is not served at all.
 3. Include `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">`.
    These pages are meant to be shared by link, not found by search — which respects both
    the copyright position and the fact that a summary shouldn't outrank the book.
