@@ -62,7 +62,30 @@ a tick before measuring, or the test reports a bug that is not there — which h
 
 A renamed term key with a stale `data-term` leaves a button that opens nothing, and it
 looks completely normal. Check both ways — no attribute without an entry, no entry never
-referenced — after any rename. **Strip `<script>` blocks before scanning**, or the
-selector string the popover code builds is itself read as an orphaned attribute; that
-false positive appeared the moment delegation was added. See
-[[verify-on-the-live-host]] on calibrating a detector before trusting it.
+referenced — after any rename.
+
+**Do not strip whole `<script>` blocks to do it.** That was the earlier advice here and it
+is wrong. It was reached for a real reason: the selector string the popover code builds,
+`button.t[data-term="…"]`, is otherwise read as an orphaned attribute, a false positive
+that appeared the moment delegation was added. But the `TIPS` object lives in that same
+block, and **note text carries real, clickable links** — on map 1, 59 of them, 31
+distinct. Stripping the script hides every one.
+
+The cost of that was paid: renaming the root delusion `Hatred` to `Anger` left the
+`Non-hatred` note pointing at a term that no longer existed, so tapping *hatred* inside it
+answered *"No detail recorded for this term."* The checker reported a clean **0 orphans in
+both directions** with that dead link live on the page. A checker that cannot see a whole
+class of link is not a weak checker, it is a misleading one.
+
+**Exclude the selector specifically instead of the block that contains it.** The two are
+distinguishable by quote style, which is a property of the file rather than a coincidence:
+note links are written `data-term='X'` in single quotes, because they sit inside
+double-quoted `def:`/`ex:` strings, while the JS selector is double-quoted. So scan the
+body for `data-term="X"` with scripts stripped, scan the script for `data-term='X'`, and
+union the two. Assert the selector count is zero as a guard, so the exclusion is proven
+each run rather than assumed.
+
+Then **calibrate it**: plant one dead link in a throwaway copy and confirm the checker
+names it and exits non-zero. Give the script a path override argument so calibration never
+touches the working file. See [[verify-on-the-live-host]] — a detector that sees nothing
+and a page with nothing to see are indistinguishable until you make it see something.

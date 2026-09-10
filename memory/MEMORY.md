@@ -4,6 +4,8 @@
 - [What ships without asking](what-ships-without-asking.md) — fixes to existing pages ship; a new map, the copyright posture and credentials wait; a published slug is a promise.
 - [Write plainly for the reader](write-plainly-for-the-reader.md) — cut your jargon, keep the tradition's exact; "entity-relationship model", "structural maps" and "bands" are on record as rejected.
 - [Terms follow the official glossary](terms-follow-the-official-glossary.md) — the page's own wording is not automatically the tradition's; the glossary is blocked here, so this records how to reach it.
+- [Anger and hatred are both official](anger-and-hatred-are-both-official.md) — the root delusion is Anger but its opponent stays Non-hatred; judge each use by its job, never search-and-replace.
+- [Consulting dharma-codex](consulting-dharma-codex.md) — sending takes two calls, it has no readable transcript, so make it write long answers to a file; it is not revivable, so record what it settles.
 - [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.
 - [Theme colours in three blocks](theme-colours-in-three-blocks.md) — full light palette on bare `:root`, then a guarded `prefers-color-scheme` block, then `[data-theme="dark"]`; reuse the house palette.
 - [Term popover gotchas](term-popover-gotchas.md) — `button.t` zeroes padding and border, so layered states must restore both — and with box-shadow, not padding, or the line reflows.

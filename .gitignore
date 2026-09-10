@@ -43,3 +43,9 @@ desktop.ini
 # Claude Code writes machine-local permissions and paths here. The repo is public;
 # committed memory is deliberate, a machine's local settings never are.
 .claude/settings.local.json
+
+# Session handovers. These name scratch paths, working files and source-extract
+# locations outside this repo — exactly the machine-specific detail that must not
+# be published. The durable knowledge belongs in memory/, which IS committed.
+.claude/SESSION-HANDOVER.md
+.claude/archive/

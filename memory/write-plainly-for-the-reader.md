@@ -68,6 +68,25 @@ Two checks that would have caught it:
 — *Secondary delusion*, *Synonym of primary mind*, *The general term for any mind* — never
 a fragment answering an unasked question, which is what *"By what a mind depends on"* was.
 
+## Say "X is Y", not "Y is what X means"
+
+A note read **"sharing it is what *basis* means here."** Explaining the same change out
+loud, the sentence came out as **"Basis is the thing they share."** The second is the one
+that should have shipped. The plain version is very often the one already used when
+describing the work; the shipped version is the one that got dressed on the way out.
+
+**The tell is a nominalisation** — a verb turned into a noun and made the subject
+(*sharing is…*, *the naming of…*, *what X means here*) — usually with a limp pointer like
+*here* or *in this context* propping it up. Also: passive constructions, and any sentence
+whose real subject arrives after the verb.
+
+**The check:** say the sentence as you would to somebody standing next to you. If that
+comes out shorter and starts with the term, that is the sentence.
+
+This is the same fault as the popover that opened by telling the reader to sort minds
+instead of saying what an awareness is. Both dress up an explanation where a plain
+statement was wanted, and the maintainer has now caught it twice.
+
 ## Plain is not vague
 
 The tradition's own technical vocabulary — *primary mind*, *mental factor*,
@@ -85,3 +104,36 @@ and softening it makes the map wrong rather than warm.
 are the tradition's and which are yours. Keep the first set verbatim. Justify or cut the
 second. When a wording gets rejected, record why in the commit message — see
 [[commits-record-why]].
+
+## Define with the tradition's own concrete word, then let the example confirm it
+
+The same note was rewritten four times before it worked, and the last two failures were
+not vagueness — they were *order*.
+
+- **"Basis is the thing they share."** Vacuous: all five similarities are things they
+  share, so this defined *similarity*, not *basis*. It left the tea as the only concrete
+  noun in the paragraph, and the reader landed on the tea — which is the *object*, the
+  one answer the note most needed to exclude.
+- **"Basis is what a mind arises from — its support, not what it is about."** True, and
+  still wrong. Correct but abstract, so the example had to carry the whole load, and the
+  reader did not reach the actual answer (*the tongue sense power*) until word 38.
+
+**What fixed it was going back to the book.** It spends one clause: *Basis: they have the
+same dominant condition* — then one sentence naming the tongue sense power outright. The
+book's own word for the thing is **power**, and it covers both cases (a sense power, the
+mental power). So *"A mind's basis is the power it arises from"* defines and is concrete
+at the same time, and the answer arrives at word 20 as a plain identification: *the basis
+is the tongue sense power*.
+
+**Two rules out of it:**
+
+- **Name the example's answer early, as an identification.** Not "A and B both arise from
+  X, so X is their basis" — the reader has to hold two clauses and assemble the
+  conclusion. Say "the basis is X", then let the rest explain why.
+- **When a definition comes out abstract, look for the tradition's own noun before
+  inventing a paraphrase.** The abstraction is usually a sign the book's concrete term was
+  skipped over. See [[terms-follow-the-official-glossary]].
+
+**And rule out the near miss by name.** If a note sits in a list of five similar things,
+say which of the neighbours it is *not*: *the taste of the tea is not the basis; the taste
+is the object.* The wrong answer a reader is likely to reach is worth one sentence.
