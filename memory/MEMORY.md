@@ -5,6 +5,7 @@
 - [Write plainly for the reader](write-plainly-for-the-reader.md) — cut your jargon, keep the tradition's exact; "entity-relationship model", "structural maps" and "bands" are on record as rejected.
 - [Terms follow the official glossary](terms-follow-the-official-glossary.md) — the page's own wording is not automatically the tradition's; the glossary is blocked here, so this records how to reach it.
 - [Anger and hatred are both official](anger-and-hatred-are-both-official.md) — the root delusion is Anger but its opponent stays Non-hatred; judge each use by its job, never search-and-replace.
+- [An edge asserts identity](an-edge-asserts-identity.md) — a link claims the word IS that catalogued item; compare the glossary's genus at both ends, and never trust our own layout as evidence.
 - [The plainest terms are the false friends](the-plainest-terms-are-the-false-friends.md) — the glossary silently replaces the everyday sense; an odd word prompts a lookup, a familiar one produces confident error.
 - [Consulting dharma-codex](consulting-dharma-codex.md) — sending takes two calls, it has no readable transcript, so make it write long answers to a file; it is not revivable, so record what it settles.
 - [Pages fetch nothing](pages-make-zero-external-requests.md) — everything inlined, so a map renders in ten years and logs no reader; the font difference and the drawn-SVG favicon follow from it.
